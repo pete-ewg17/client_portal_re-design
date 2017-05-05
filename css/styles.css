@@ -281,6 +281,7 @@ body {
 
 td {
   font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
 }
 
 th, td {
@@ -326,7 +327,7 @@ th, td {
 }
 
 .flip-front:hover {
-  opacity:0;
+  
 }
 
 /* Rotate the cube */
@@ -334,16 +335,13 @@ th, td {
 	-webkit-transform: rotateX(90deg);
 	transform: rotateX(92deg); /* Text bleed at 90º */
     animation-delay: 3.5s;
-    border: none;
-    
-    
-
+    border: none;    
 }
 
 .flip-back ul{
   list-style: none;
   display: inline-block;
-  margin: -5px;
+  margin: -10px;
   padding: 0;
 }
 

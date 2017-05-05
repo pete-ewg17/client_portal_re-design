@@ -4,12 +4,9 @@ $(document).ready(function() {
 	});
   
   
-  /*FLIP ANIMATION */
+  
 
-    /*$(".card").flip({
-  axis: 'x',
-  trigger: 'hover'
-    });*/
+
   
 
 });

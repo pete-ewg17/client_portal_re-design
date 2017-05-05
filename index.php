@@ -77,8 +77,7 @@
                   <th>Event Name</th>
                   <th>Status</th>
                   <th>Event ID</th>
-                  <th>Date Start</th>
-                  <th>Funtions</th>
+                  <th>Date</th>
                 </tr>
               </thead>
               <tbody>
@@ -105,7 +104,6 @@
                   <td class=" btn-warning">Submitted</td>
                   <td>EWG-12345</td>
                   <td>Friday 28th Apr</td>
-                  <td>+</td>
                 </tr>
                 <tr>
                  <td>
@@ -128,14 +126,13 @@
                   <td class="btn-success">Live</td>
                   <td>EWG-12345</td>
                   <td>Saturday 29th Apr</td>
-                  <td>+</td>
                 </tr>
                 <!--<tr>
                         <td>Grooving the Moo, Townsville, QLD</td>
                         <td class="btn-info">Recruiting</td>
                         <td>EWG-12345</td>  
                         <td>Sunday 30th Apr</td>
-                        <td>+</td> 
+                        
                       </tr>
                       <tr>
                         <td>Grooving the Moo, Bendigo, VIC</td>
@@ -149,28 +146,27 @@
                         <td class="btn-warning">Submitted</td>
                         <td>EWG-12345</td>  
                         <td>Sunday 7th May</td>
-                        <td>+</td>
+                       
                       </tr>  
                       <tr>
                         <td>Grooving the Moo, Bunbury, WA</td>
                         <td class="btn-primary">Download</td>
                         <td>EWG-12345</td>  
                         <td>Sunday 13th May</td>
-                        <td>+</td>
-                      </tr>
+                                              </tr>
                       <tr>
                         <td>Grooving the Moo, Bunbury, WA</td>
                         <td class="btn-info">Recruiting</td>
                         <td>EWG-12345</td>  
                         <td>Sunday 13th May</td>
-                        <td>+</td>
+                       
                       </tr>
                        <tr>
                         <td>Grooving the Moo, Bunbury, WA</td>
                         <td class="btn-warning">Submitted</td>
                         <td>EWG-12345</td>  
                         <td>Sunday 13th May</td>
-                        <td>+</td>
+                       
                       </tr>-->
               </tbody>
             </table>
