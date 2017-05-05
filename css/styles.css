@@ -294,7 +294,7 @@ th, td {
 	text-align: center;
 	margin: 0 auto;
 	height: 1.2em;
-    backface-visibility: hidden;
+    
 
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s; /* Animate the transform properties */
@@ -305,11 +305,6 @@ th, td {
 
 /* The two faces of the cube */
 .flip-front,.flip-back {
-	
-	/*border: 1px solid #e4e4e4;*/
-
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 	height: 1.2em;
 }
 
@@ -317,17 +312,32 @@ th, td {
 .flip-front {
 	-webkit-transform: translateZ(50px);
 	transform: translateZ(50px);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border: 1px solid transparent;
 }
 
 .flip-back {
 	-webkit-transform: rotateX(-90deg) translateZ(-50px);
 	transform: rotateX(-90deg) translateZ(-50px);
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    border: 1px solid transparent;
+}
+
+.flip-front:hover {
+  opacity:0;
 }
 
 /* Rotate the cube */
 .flip-cube:hover {
 	-webkit-transform: rotateX(90deg);
-	transform: rotateX(90deg); /* Text bleed at 90º */
+	transform: rotateX(92deg); /* Text bleed at 90º */
+    animation-delay: 3.5s;
+    border: none;
+    
+    
+
 }
 
 .flip-back ul{
@@ -339,7 +349,7 @@ th, td {
 
 .flip-icons {
   display: inline-block;
-  margin: 0.625rem;
+  margin: 0.655rem;
   font-size: 1.2rem;
 }
 
