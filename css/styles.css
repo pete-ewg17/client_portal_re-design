@@ -354,35 +354,36 @@ th, td {
 	
 /*TOOLTIP */
 
-.tooltip {
+.tiptool {
     opacity:1;
   position:relative;
+	
 }
 
-.tooltip .tooltiptext {
+.tiptool .tooltiptext {
     visibility: hidden;
-    width: 120px;
+    width: 82px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-     opacity:0;
+    opacity:0;
     padding: 5px 0;
     font-family: 'Open Sans Condensed', sans-serif; 
-    font-size: 0.9em;
+    font-size: 0.7em;
+	z-index: 1080;
     
     /* Position the tooltip */
     position: absolute;
-    z-index: 10;
-    top: -5px;  
+    top: -2px;  
     left: 100%;
     margin-left: 5px;
     transition: all 200ms linear;
 }
 
-.tooltip:hover .tooltiptext {
+.tiptool:hover .tooltiptext {
     visibility: visible;
-  opacity:1
+  	opacity:1
 }
 
 

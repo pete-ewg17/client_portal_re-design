@@ -68,7 +68,8 @@
     </div>
     <div class="main">
       <div class="widget events">
-        <div class="title">Current Events <a href="#"><i class="fa fa-plus"></i></a>
+        <div class="title">Current Events <a href="#"><i class="fa fa-plus"></i>Hover Over Event Name for more options</a>
+        <p></p>
         </div>
         <div class="current-event">
           <section class="wrapper">
@@ -92,19 +93,26 @@
                         <ul class="flip-ul">
                           <li class="flip-icons">
                            <a href="#">
-                            <i class="fa fa-address-card-o tooltip">
-                              <span class="tooltiptext">Tooltip text</span>   
+                            <i class="fa fa-address-card-o tiptool">
+                              <span class="tooltiptext">View Event</span>   
                            </i>
                             </a>     
                           </li>
                           <li class="flip-icons">
-                            <a href="#" title="Edit Event"><i class="fa fa-pencil"></i></a>
+                          <a href="#"><i class="fa fa-pencil tiptool">
+                              <span class="tooltiptext">Edit Event</span>  
+                            </i>
+                          </a>
                           </li>
                           <li class="flip-icons">
-                            <a href="#" title="Download Event"><i class="fa fa-cloud-download"></i></a>
+                            <a href="#" title="Download Event"><i class="fa fa-cloud-download tiptool">
+                            	<span class="tooltiptext">Download Event</span> 
+                            </i></a>
                           </li>
                           <li class="flip-icons">
-                            <a href="#" title="Contact Us"><i class="fa fa-envelope"></i></a>
+                            <a href="#" title="Contact Us"><i class="fa fa-envelope tiptool">
+                            	<span class="tooltiptext">Contact Us</span> 
+                            </i></a>
                           </li>
                         </ul>
                       </div>
@@ -126,16 +134,27 @@
                       <div class="flip-back">
                         <ul class="flip-ul">
                           <li class="flip-icons">
-                            <a href="#" title="View Event"><i class="fa fa-address-card-o"></i></a>
+                           <a href="#">
+                            <i class="fa fa-address-card-o tiptool">
+                              <span class="tooltiptext">View Event</span>   
+                           </i>
+                            </a>     
                           </li>
                           <li class="flip-icons">
-                            <a href="#" title="Edit Event"><i class="fa fa-pencil"></i></a>
+                          <a href="#"><i class="fa fa-pencil tiptool">
+                              <span class="tooltiptext">Edit Event</span>  
+                            </i>
+                          </a>
                           </li>
                           <li class="flip-icons">
-                            <a href="#" title="Download Event"><i class="fa fa-cloud-download"></i></a>
+                            <a href="#" title="Download Event"><i class="fa fa-cloud-download tiptool">
+                            	<span class="tooltiptext">Download Event</span> 
+                            </i></a>
                           </li>
                           <li class="flip-icons">
-                            <a href="#" title="Contact Us"><i class="fa fa-envelope"></i></a>
+                            <a href="#" title="Contact Us"><i class="fa fa-envelope tiptool">
+                            	<span class="tooltiptext">Contact Us</span> 
+                            </i></a>
                           </li>
                         </ul>
                       </div>
@@ -200,10 +219,14 @@
             </div>
         </div>
       </div>
+      
+      <!--NOTICEBOARD-->
       <div class="widget">
         <div class="title">Noticeboard</div>
         <div class="chart"></div>
       </div>
+      
+      <!--INSTAGRAM-->
       <div class="widget">
         <div class="title">Instagram</div>
         <div class="chart"></div>
