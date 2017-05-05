@@ -225,7 +225,7 @@ body {
 }
 .current-event {
   height: 86%;
-  width: 100%;
+  max-width: 100%;
   overflow-y: auto;
 }
 .events {
@@ -233,6 +233,7 @@ body {
   flex-basis: 98%;
   height: 300px;
   font-size: 1.1em;
+  overflow-x: auto;
 }
 
 .event-overflow {
@@ -296,7 +297,6 @@ th, td {
 	margin: 0 auto;
 	height: 1.2em;
     
-
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s; /* Animate the transform properties */
 
@@ -327,7 +327,7 @@ th, td {
 }
 
 .flip-front:hover {
-  
+  visibility: hidden;
 }
 
 /* Rotate the cube */
@@ -335,7 +335,8 @@ th, td {
 	-webkit-transform: rotateX(90deg);
 	transform: rotateX(92deg); /* Text bleed at 90º */
     animation-delay: 3.5s;
-    border: none;    
+    border: none;   
+    
 }
 
 .flip-back ul{
@@ -350,11 +351,39 @@ th, td {
   margin: 0.655rem;
   font-size: 1.2rem;
 }
-
 	
+/*TOOLTIP */
 
-/**/
+.tooltip {
+    opacity:1;
+  position:relative;
+}
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+     opacity:0;
+    padding: 5px 0;
+    font-family: 'Open Sans Condensed', sans-serif; 
+    font-size: 0.9em;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 10;
+    top: -5px;  
+    left: 100%;
+    margin-left: 5px;
+    transition: all 200ms linear;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  opacity:1
+}
 
 
 

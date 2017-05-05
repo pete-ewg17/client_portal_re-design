@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+<html>
 
 <body>
   <div class="header">
@@ -85,19 +86,28 @@
                   <td>
                     <div class="flip-cube">
                       <div class="flip-front">
-                        <p>
-                          Grooving the Moo, Wayville, SA
-                        </p>
+                        <p> Grooving the Moo, Wayville, SA</p>
                       </div>
                       <div class="flip-back">
                         <ul class="flip-ul">
-                          <li class="flip-icons"><i class="fa fa-address-card-o" title="view event"></i></li>
-                          <li class="flip-icons"><i class="fa fa-pencil"></i></li>
-                          <li class="flip-icons"><i class="fa fa-cloud-download"></i></li>
-                          <li class="flip-icons"><i class="fa fa-envelope"></i></li>
+                          <li class="flip-icons">
+                           <a href="#">
+                            <i class="fa fa-address-card-o tooltip">
+                              <span class="tooltiptext">Tooltip text</span>   
+                           </i>
+                            </a>     
+                          </li>
+                          <li class="flip-icons">
+                            <a href="#" title="Edit Event"><i class="fa fa-pencil"></i></a>
+                          </li>
+                          <li class="flip-icons">
+                            <a href="#" title="Download Event"><i class="fa fa-cloud-download"></i></a>
+                          </li>
+                          <li class="flip-icons">
+                            <a href="#" title="Contact Us"><i class="fa fa-envelope"></i></a>
+                          </li>
                         </ul>
                       </div>
-
                     </div>
                   </td>
                   <!--FRONT -->
@@ -106,8 +116,8 @@
                   <td>Friday 28th Apr</td>
                 </tr>
                 <tr>
-                 <td>
-                  <div class="flip-cube">
+                  <td>
+                    <div class="flip-cube">
                       <div class="flip-front">
                         <p>
                           Grooving the Moo, Maitland, NSW
@@ -115,14 +125,22 @@
                       </div>
                       <div class="flip-back">
                         <ul class="flip-ul">
-                          <li class="flip-icons"><i class="fa fa-address-card-o" title="view event"></i></li>
-                          <li class="flip-icons"><i class="fa fa-pencil"></i></li>
-                          <li class="flip-icons"><i class="fa fa-cloud-download"></i></li>
-                          <li class="flip-icons"><i class="fa fa-envelope"></i></li>
+                          <li class="flip-icons">
+                            <a href="#" title="View Event"><i class="fa fa-address-card-o"></i></a>
+                          </li>
+                          <li class="flip-icons">
+                            <a href="#" title="Edit Event"><i class="fa fa-pencil"></i></a>
+                          </li>
+                          <li class="flip-icons">
+                            <a href="#" title="Download Event"><i class="fa fa-cloud-download"></i></a>
+                          </li>
+                          <li class="flip-icons">
+                            <a href="#" title="Contact Us"><i class="fa fa-envelope"></i></a>
+                          </li>
                         </ul>
                       </div>
                     </div>
-                  </td>  
+                  </td>
                   <td class="btn-success">Live</td>
                   <td>EWG-12345</td>
                   <td>Saturday 29th Apr</td>
@@ -176,7 +194,11 @@
       </div>
       <div class="widget">
         <div class="title">Past Events</div>
-        <div class="chart"></div>
+        <div class="chart">
+            <div class="past_events">
+              
+            </div>
+        </div>
       </div>
       <div class="widget">
         <div class="title">Noticeboard</div>
@@ -188,28 +210,24 @@
       </div>
     </div>
   </div>
-</body>
 
-
-
-<!-- Bootstrap core JavaScript
+  <!-- Bootstrap core JavaScript
     ================================================== -->
-<!--<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 
-
-<!--
+  <!--
 <script src="main.js"></script>
 -->
-<!-- Placed at the end of the document so the pages load faster 
+  <!-- Placed at the end of the document so the pages load faster 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
 
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-<script src="js/scripts.js"></script>
 
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>
