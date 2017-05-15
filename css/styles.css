@@ -24,6 +24,11 @@ h2 {
 	color: #333;
 }
 
+h3 {
+	font-weight: 300;
+	color: #555;
+}
+
 /*=================
   BUTTON STYLES
 ===================*/
@@ -1136,15 +1141,14 @@ input:focus~.highlight {
 	padding: 0.2em 0.9em;
 }
 
-
-
-
 .content {
 	width: 960px;
 	margin: auto;
 }
 
-
+.form-title {
+	margin: 2.2em 0;
+}
 
 
 
