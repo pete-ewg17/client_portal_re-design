@@ -7,8 +7,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Responsive vertical menu navigation</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <title>Client Portal | Event Workforce Group Talen</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,7 +33,7 @@
     <!--NAVIGATION-->
     <nav>
       <ul>
-        <li>
+        <li class="active">
           <a href="#">
             <span><i class="fa fa-user"></i></span>
             <span>My Details</span>
@@ -46,7 +46,7 @@
             <span>Past Events</span>
           </a>
         </li>
-        <li class="active">
+        <li>
           <a href="#">
             <span><i class="fa fa-clipboard"></i></span>
             <span>Invoices</span>
@@ -68,8 +68,8 @@
     </div>
     <div class="main">
       <div class="widget events">
-        <div class="title">Current Events <a href="#"><i class="fa fa-plus"></i>Hover Over Event Name for more options</a>
-        <p></p>
+        <div class="title">Current Events <a href="#"><i class="fa fa-plus"></i></a>
+        
         </div>
         <div class="current-event">
           <section class="wrapper">
@@ -78,8 +78,8 @@
                 <tr>
                   <th>Event Name</th>
                   <th>Status</th>
-                  <th>Event ID</th>
-                  <th>Date</th>
+                  <th class="hide">Event ID</th>
+                  <th class="hide">Date</th>
                 </tr>
               </thead>
               <tbody>
@@ -87,7 +87,7 @@
                   <td>
                     <div class="flip-cube">
                       <div class="flip-front">
-                        <p> Grooving the Moo, Wayville, SA</p>
+                        <p> Grooving the Moo, Wayville, SA  <i class="fa fa-exclamation-triangle" aria-hidden="true" title="need brief"></i></p>
                       </div>
                       <div class="flip-back">
                         <ul class="flip-ul">
@@ -119,9 +119,9 @@
                     </div>
                   </td>
                   <!--FRONT -->
-                  <td class=" btn-warning">Submitted</td>
-                  <td>EWG-12345</td>
-                  <td>Friday 28th Apr</td>
+                  <td class="btn-warning">Submitted</td>
+                  <td class="hide">EWG-12345</td>
+                  <td class="hide">Friday 28th Apr</td>
                 </tr>
                 <tr>
                   <td>
@@ -161,8 +161,8 @@
                     </div>
                   </td>
                   <td class="btn-success">Live</td>
-                  <td>EWG-12345</td>
-                  <td>Saturday 29th Apr</td>
+                  <td class="hide">EWG-12345</td>
+                  <td class="hide">Saturday 29th Apr</td>
                 </tr>
                 <!--<tr>
                         <td>Grooving the Moo, Townsville, QLD</td>
@@ -213,9 +213,21 @@
       </div>
       <div class="widget">
         <div class="title">Past Events</div>
-        <div class="chart">
-            <div class="past_events">
-              
+        <div class="past-event">
+            <div class="past-wrapper">
+             	<div class="list">
+              	<ul>
+              		<li><span class="past-date">FRI 28th Apr,</span> Grooving The Moo, Wayville </li>
+              		<li><span class="past-date">SAT 29th Apr,</span> Grooving The Moo, Maitland</li>
+              		<li><span class="past-date">SUN 30th Apr,</span> Grooving The Moo, Townsville</li>
+              		<li><span class="past-date">FRI 28th Apr,</span> Grooving The Moo, Wayville</li>
+              		<li><span class="past-date">SAT 29th Apr,</span> Grooving The Moo, Maitland</li>
+              		<li><span class="past-date">SUN 30th Apr,</span> Grooving The Moo, Townsville</li>
+              		<li><span class="past-date">FRI 28th Apr,</span> Grooving The Moo, Wayville</li>
+              		<li><span class="past-date">SAT 29th Apr,</span> Grooving The Moo, Maitland</li>
+              		<li><span class="past-date">SUN 30th Apr,</span> Grooving The Moo, Townsville</li>
+              	</ul>
+             </div> 	
             </div>
         </div>
       </div>
@@ -223,21 +235,37 @@
       <!--NOTICEBOARD-->
       <div class="widget">
         <div class="title">Noticeboard</div>
-        <div class="chart"></div>
-      </div>
+        
+        	<div class="past-event">
+            <div class="past-wrapper">
+             	<div class="list">
+              	<ul>
+              		<li class="new-notice"><i class="fa fa-exclamation-circle" aria-hidden="true"></i>   Welcome to the your new client portal</li>
+              		<li class=""> Start here to learn more...</li>
+              		<li>Lorem ipsum</li>
+              	</ul>
+             </div> 	
+            </div>
+        </div>
+        </div>
+      
       
       <!--INSTAGRAM-->
+      
       <div class="widget">
         <div class="title">Instagram</div>
-        <div class="chart"></div>
-      </div>
-    </div>
-  </div>
-
+        <div class="insta">
+        <div id="instafeed" class="img-responsive"></div>
+        </div>
+       </div>
+        </div><!--END MAIN-->
+        </div><!--END CONTENT-->
+    
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/instafeed.js"></script>
   <script src="js/scripts.js"></script>
 
   <!--
