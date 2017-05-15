@@ -37,7 +37,6 @@ a.animated-button.thar-three {
 	position: relative;
 	/*background: #B2D235;*/
 	border: 2px solid #445325;
-	border-radius: 
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 0s;
 }
@@ -101,7 +100,7 @@ a:focus {
 	
 }
 
-.evt-overlay {
+/*.evt-overlay {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -117,7 +116,7 @@ a:focus {
     margin: -20px;
 	display: none;
 	overflow: auto;
-}
+}*/
 
 /* DIVIDER */
 

@@ -121,9 +121,9 @@
 											<span class="bar"></span>
 											<label class="text-placeholder">Event Website</label>
 										</div>
-										<div class="group">
+										
 											<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
-										</div>
+										
 									</form>
 								</div>
 								<!-- END FORM EVENT -->
