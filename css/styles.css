@@ -1107,6 +1107,7 @@ margin: 14px 0 37px 0;
 /* SPINNER */
 
 .spinner {
+  height: 36px;
   width: 320px;
   top: -12px;
 }
@@ -1134,7 +1135,7 @@ margin: 14px 0 37px 0;
   border-top-right-radius: 4px;
 }
 .input-group-btn-vertical > .btn:last-child {
-  margin-top: 2px;;
+  
   border-bottom-right-radius: 4px;
 }
 .input-group-btn-vertical i{
