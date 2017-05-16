@@ -91,13 +91,14 @@
 
 									<form>
 										<div class="group">
-											<input class="" type="text" required>
+											<input class="" type="text" name=''event_id required>
 											<span class="highlight"></span>
 											<span class="bar"></span>
 											<label class="text-placeholder">Event Name</label>
 										</div>
 										<div class="group">
-											<input type="text" required>
+											<input type="text" name='event_location' id='event_location' required>
+											<input type="hidden" name='lat_long' id='lat_long'>
 											<span class="highlight"></span>
 											<span class="bar"></span>
 											<label class="text-placeholder">Event Location</label>
@@ -125,7 +126,6 @@
 											<span class="bar"></span>
 											<label class="text-placeholder">Event Website</label>
 										</div>
-										
 											<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
 										
 									</form>
@@ -139,12 +139,12 @@
 					<div class="card">
 						<div class="card-header" role="tab" id="headingTwo">
 							<h4 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#e_c" aria-expanded="false" aria-controls="e_c">
           #2 Event Contact
         </a>
 							</h4>
 						</div>
-						<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+						<div  class="collapse" id="e_c" role="tabpanel" aria-labelledby="headingTwo">
 							<div class="card-block">
 								<form>
 									<div class="group">
@@ -192,12 +192,12 @@
 					<div class="card">
 						<div class="card-header" role="tab" id="headingThree">
 							<h4 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#m_d" aria-expanded="false" aria-controls="m_d">
           #3 More Details
         </a>
 							</h4>
 						</div>
-						<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+						<div class="collapse" id="m_d" role="tabpanel" aria-labelledby="headingThree">
 							<div class="card-block">
 								<form>
 									<div class="form-group e-d">
@@ -253,12 +253,12 @@
 					<div class="card">
 						<div class="card-header" role="tab" id="headingFour">
 							<h4 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#a_s" aria-expanded="false" aria-controls="a_s">
           #4 Add Shift
         </a>
 							</h4>
 						</div>
-						<div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+						<div class="collapse" id="a_s" role="tabpanel" aria-labelledby="headingFour">
 							<div class="card-block">
 								<form>
 									<div class="form-group e-c">
@@ -295,7 +295,7 @@
 										
 									 </div>
 									 <div class="group">
-										<a href="#" id="next-1" data-unlock="a_s" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+										<a href="#" id="next-1" data-unlock="a_j" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
 									</div>
 								</form>
 							</div>
@@ -318,6 +318,8 @@
 	<script src="dist/trumbowyg.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/scripts-date.js"></script>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq10WQ5iexOEyCvy01hKyTPXEOjttR3jg&libraries=places'></script>
+	<script src="js/add_event.js"></script>
 	
 	
 
