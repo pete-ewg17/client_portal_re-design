@@ -7,6 +7,7 @@ $(document).ready(function() {
 		$('.side-nav').toggleClass('visible');
 	});
 	
+	/*CALLING WSIWYG*/
 	$('#trumbowyg-1').trumbowyg();
 	$('#trumbowyg-2').trumbowyg();
 	$('#trumbowyg-3').trumbowyg();
@@ -14,9 +15,6 @@ $(document).ready(function() {
 	
 	
 });
-
-
-
 
 /*============
   DATE PICKER
