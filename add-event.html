@@ -87,9 +87,8 @@
 
 						<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 							<div class="card-block">
-								<div class="form-event" id="e_d">
-
-									<form>
+								<div class="form-event row" id="e_d">
+									<form class='col-sm-6'>
 										<div class="group">
 											<input class="" type="text" name=''event_id required>
 											<span class="highlight"></span>
@@ -97,8 +96,9 @@
 											<label class="text-placeholder">Event Name</label>
 										</div>
 										<div class="group">
-											<input type="text" name='event_location' id='event_location' required>
+											<input type="text" name='event_location' placeholder='' id='event_location' required>
 											<input type="hidden" name='lat_long' id='lat_long'>
+											<input type="hidden" name='state' id='state'>
 											<span class="highlight"></span>
 											<span class="bar"></span>
 											<label class="text-placeholder">Event Location</label>
@@ -129,6 +129,9 @@
 											<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
 										
 									</form>
+									<div class='col-sm-6 map_holder'>
+										<div id='map-canvas'></div>
+									</div>
 								</div>
 								<!-- END FORM EVENT -->
 							</div>
