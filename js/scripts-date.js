@@ -7,7 +7,10 @@ $(document).ready(function() {
 		$('.side-nav').toggleClass('visible');
 	});
 	
-	$('#trumbowyg-demo').trumbowyg();
+	$('#trumbowyg-1').trumbowyg();
+	$('#trumbowyg-2').trumbowyg();
+	$('#trumbowyg-3').trumbowyg();
+	$('#trumbowyg-4').trumbowyg();
 	
 	
 });
@@ -82,8 +85,15 @@ $("#cbx").change(function(){
 	}
 });
 
-
-
+/*SPINNER*/
+(function ($) {
+  $('.spinner .btn:first-of-type').on('click', function() {
+    $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
+  });
+  $('.spinner .btn:last-of-type').on('click', function() {
+    $('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
+  });
+})(jQuery);
 
 
 
