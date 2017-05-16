@@ -67,7 +67,6 @@ a:focus {
 .btn-q {
 	height: 50px;
 	background: #0082c2;
-	
 }
 
 
@@ -673,7 +672,8 @@ input {
 	padding: 10px 10px 10px 5px;
 	display: block;
 	width: 320px;
-	border: none;
+	border: 1px solid #d5dae5;
+	border-radius: 0.2em;
 	border-bottom: 1px solid #d5dae5;
 }
 
@@ -984,6 +984,10 @@ input:focus~.highlight {
 .form-group {
 	position: relative;
 	margin: 0 0 2em 0;
+}
+
+.form-upload {
+	margin: 1.6em 0;
 }
 
 .form-group textarea {

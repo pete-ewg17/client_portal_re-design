@@ -9,10 +9,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Client Portal | Event Workforce Group Talent</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" href="dist/ui/trumbowyg.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
-	
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -201,8 +201,9 @@
 							<div class="card-block">
 								<form>
 									<div class="form-group">
-										<textarea required="required"></textarea>
-										<label class="control-label" for="textarea">Event Description</label><i class="bar"></i>
+									 <div id="trumbowyg-demo">
+										<h5>Event Description</h5>
+									 </div>	
 									</div>
 									<div class="form-upload">
 										<input class="upload" type="file" id="file" custom="custom-file-input">
@@ -299,8 +300,8 @@
 				</div>
 				<!-- END ACCORDION -->
 				</div>
-			</div>
-		</div>
+			</div><!-- END MAIN CONTENT -->
+		
 	
 
 		
@@ -308,6 +309,8 @@
     ================================================== -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script src="dist/trumbowyg.min.js"></script>
+	<script src="dist/trumbowyg.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/scripts-date.js"></script>
 	
