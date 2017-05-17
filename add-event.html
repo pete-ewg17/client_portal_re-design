@@ -264,43 +264,46 @@
 				<!--ADD SHIFT -->
 				<div class="card">
 					<div class="card-header" role="tab" id="headingFour">
-						<h4 class="mb-0">
-							<a aria-expanded="false" aria-controls="a_s" data-toggle="modal" data-target="#myModal"> Add Shift +
-							</a>
-						</h4>
+						<a aria-expanded="false" aria-controls="a_s" data-toggle="modal" data-target="#myModal">
+							<h4 class="mb-0">
+								#4 Add Shift +
+							</h4>
+						</a>
 					</div>
 					<div class="collapse" id="a_s" role="tabpanel" aria-labelledby="headingFour">
-						
+
 					</div>
 				</div>
 			</div>
 			<!-- END ACCORDION -->
 		</div>
 		<!-- END COLUMN -->
-	</div><!-- END MAIN CONTENT -->
+	</div>
+	<!-- END MAIN CONTENT -->
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-         <h4 class="modal-title" id="myModalLabel">Enter shift details</h3>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      
-      </div>
-      <div class="modal-body">
-        <div class="card-block">
-							<form>
-								
-							<div class="group">
-								<input class="" type="text" name='' event_id required>
-								<span class="highlight"></span>
-								<span class="bar"></span>
-								<label class="text-placeholder">Title</label>
-							</div>
-							
-							<p class="">How Many Staff Are Needed?</p>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Enter shift details</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				</div>
+				<div class="modal-body">
+					<div class="card-block">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore, nisi vel ab consequuntur cumque repudiandae, quaerat dolores consectetur autem non ipsam. Ex a corporis ut perferendis, iusto veniam saepe.</p>
+
+						<form>
+							<div class="group-modal">
+								<div class="group group-modal">
+									<input class="" type="text" name='' event_id required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Shift Title</label>
+								</div>
+
+								<p class="">How Many Staff Are Needed?</p>
 								<div class="input-group spinner">
 									<input type="text" class="form-control" value="1">
 									<div class="input-group-btn-vertical">
@@ -308,64 +311,49 @@
 										<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
 									</div>
 								</div>
-							<div class="group">	
-							
-									<input class="datepicker" type="text" required>
-									<span class="highlight"></span>
-									<span class="bar"></span>
-									<label class="text-placeholder">Date</label>
+										
 								
-							</div>	
-							<div class="group">
+								<p>Shift Start:</p>		
+								<div class="group shift">
 									<input class="datepicker" type="text" required>
 									<span class="highlight"></span>
 									<span class="bar"></span>
-									<label class="text-placeholder">Date</label>
-								</div>	
-							<div class="group">
-							<div class="input-group bootstrap-timepicker timepicker">
-            					<input id="timepicker" type="text" class="form-control input-small">
-           						 <span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
-       						 </div>
-       						</div>	
-       						<br> 
-								<!--<div class="form-group e-c">
-									<select>
-							<option>All Shifts</option>
-							<option>Multiple Shifts</option>
-						  </select>
-									<label class="control-label" for="select">Shift Category</label><i class="bar"></i>
-								</div>-->
-								<!--<div class="group">
+									<label class="text-placeholder">Date Start</label>
+								</div>
+									
+								<div class="group">
+									<div class="input-group bootstrap-timepicker timepicker" style="width:320px; padding: 0;">
+										<input id="timepicker" type="text" class="form-control input-small">
+										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+									</div>
+								</div>
+
+
+								<p>Shift End:</p>
+								<div class="group shift">
 									<input class="datepicker" type="text" required>
 									<span class="highlight"></span>
 									<span class="bar"></span>
-									<label class="text-placeholder">Date</label>
+									<label class="text-placeholder">Date End</label>
 								</div>
 								<div class="group">
-									<input type="text" required>
-									<span class="highlight"></span>
-									<span class="bar"></span>
-									<label class="text-placeholder">Event Location</label>
+									
+									<div class="input-group bootstrap-timepicker timepicker" style="width:320px;">
+										<input id="timepicker-1" type="text" class="form-control input-small">
+										<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+									</div>
 								</div>
-								<div class="form-group">
-									<h5>Shift Requirements</h5>
-									<div id="trumbowyg-3"></div>
-								</div>-->
-								
-								<div class="group">
-									<a href="#" id="next-1" data-unlock="a_j" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
-								</div>
-							</form>
-						</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
 
@@ -375,9 +363,9 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script src="dist/trumbowyg.min.js"></script>
 	<script src="dist/trumbowyg.js"></script>
-	 <script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
+	<script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
-	
+
 	<script src="js/scripts-date.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq10WQ5iexOEyCvy01hKyTPXEOjttR3jg&libraries=places'></script>
 	<script src="js/add_event.js"></script>

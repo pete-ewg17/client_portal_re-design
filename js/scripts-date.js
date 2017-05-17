@@ -1,6 +1,6 @@
 
-var time = $('#timepicker').timepicker('showWidget');
-
+$('#timepicker').timepicker();
+$('#timepicker-1').timepicker();
 
 	/*CALLING WSIWYG*/
 	$('#trumbowyg-1').trumbowyg();
