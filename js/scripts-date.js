@@ -1,6 +1,13 @@
 
-  $('#timepicker').timepicker();
-		console.log('#timepicker');
+var time = $('#timepicker').timepicker('showWidget');
+
+
+	/*CALLING WSIWYG*/
+	$('#trumbowyg-1').trumbowyg();
+	$('#trumbowyg-2').trumbowyg();
+	$('#trumbowyg-3').trumbowyg();
+	$('#trumbowyg-4').trumbowyg();
+		
 /*============
   SIDE BAR
 =============*/
@@ -9,12 +16,6 @@ $(document).ready(function() {
 	$('.nav-trigger').click(function() {
 		$('.side-nav').toggleClass('visible');
 	});
-	
-	/*CALLING WSIWYG*/
-	$('#trumbowyg-1').trumbowyg();
-	$('#trumbowyg-2').trumbowyg();
-	$('#trumbowyg-3').trumbowyg();
-	$('#trumbowyg-4').trumbowyg();
 	
 	
 });
