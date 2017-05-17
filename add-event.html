@@ -9,17 +9,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Client Portal | Event Workforce Group Talent</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="dist/ui/trumbowyg.min.css">
+	<link type="text/css" href="css/bootstrap-timepicker.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <html>
-	<body>
-	
+
+<body>
+
 	<div class="header">
 		<div class="logo">
 			<i class="fa fa-rebel"></i>
@@ -64,215 +65,60 @@
 			</ul>
 		</nav>
 	</div>
-			
-<div class="main-content">
-<div class="title">
-	<h3>Please follow the instructions below</h3>
-</div>
- 
+
+	<div class="main-content">
+		<div class="title">
+			<h3>Please follow the instructions below</h3>
+		</div>
+
 		<div class="col-md-12">
 			<div class="form-title">
 				<h3>Introduction</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur architecto eum pariatur natus reprehenderit perferendis, harum ipsam molestias minima delectus tempore, labore, recusandae ab laudantium numquam rerum neque tempora.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim aspernatur architecto eum pariatur natus reprehenderit perferendis, harum ipsam molestias minima delectus tempore, labore, recusandae ab laudantium numquam rerum neque tempora.</p>
 			</div>
-				<div id="accordion" class=""role="tablist" aria-multiselectable="true">
-					<div class="card">
-						<div class="card-header" role="tab" id="headingOne">
-							<h4 class="mb-0">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+			<!--EVENT DETAILS-->
+			<div id="accordion" class="" role="tablist" aria-multiselectable="true">
+				<div class="card">
+					<div class="card-header" role="tab" id="headingOne">
+						<h4 class="mb-0">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           #1 Event Details 
         </a>
-							</h4>
-						</div>
-
-						<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-							<div class="card-block">
-								<div class="form-event row" id="e_d">
-									<form class='col-sm-6'>
-										<div class="group">
-											<input class="" type="text" name=''event_id required>
-											<span class="highlight"></span>
-											<span class="bar"></span>
-											<label class="text-placeholder">Event Name</label>
-										</div>
-										<div class="group">
-											<input type="text" name='event_location' placeholder='' id='event_location' required>
-											<input type="hidden" name='lat_long' id='lat_long'>
-											<input type="hidden" name='state' id='state'>
-											<span class="highlight"></span>
-											<span class="bar"></span>
-											<label class="text-placeholder">Event Location</label>
-										</div>
-										<div class="group">
-											<input type="text" value="" id="event_start_date" class="datepicker" required>
-											<span class="highlight"></span>
-											<span class="bar"></span>
-											<label class="text-placeholder">Date</label>
-										</div>
-										<div class="group" id="more-than-one-day-holder" style='display:none'>
-											<p>Does this event go for more than one day</p>
-											<a class='btn btn-danger btn-one-day'>No</a>
-											<a class='btn btn-success btn-more-one-day'>Yes</a>
-										</div>
-										<div class="group" id="finish-day-holder" style='display:none'>
-											<input type="text" value="" class="datepicker" required>
-											<span class="highlight"></span>
-											<span class="bar"></span>
-											<label class="text-placeholder">Date</label>
-										</div>
-										<div class="group">
-											<input type="text" required>
-											<span class="highlight"></span>
-											<span class="bar"></span>
-											<label class="text-placeholder">Event Website</label>
-										</div>
-											<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
-										
-									</form>
-									<div class='col-sm-6 map_holder'>
-										<div id='map-canvas'></div>
-									</div>
-								</div>
-								<!-- END FORM EVENT -->
-							</div>
-						</div>
+						</h4>
 					</div>
-					<br />
 
-					<div class="card">
-						<div class="card-header" role="tab" id="headingTwo">
-							<h4 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#e_c" aria-expanded="false" aria-controls="e_c">
-          #2 Event Contact
-        </a>
-							</h4>
-						</div>
-						<div  class="collapse" id="e_c" role="tabpanel" aria-labelledby="headingTwo">
-							<div class="card-block">
-								<form>
+					<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+						<div class="card-block">
+							<div class="form-event row" id="e_d">
+								<form class='col-sm-6'>
 									<div class="group">
-										<input type="text" required>
+										<input class="" type="text" name='' event_id required>
 										<span class="highlight"></span>
 										<span class="bar"></span>
-										<label class="text-placeholder">Company Name</label>
+										<label class="text-placeholder">Event Name</label>
 									</div>
 									<div class="group">
-										<input type="text" required>
+										<input type="text" name='event_location' placeholder='' id='event_location' required>
+										<input type="hidden" name='lat_long' id='lat_long'>
+										<input type="hidden" name='state' id='state'>
 										<span class="highlight"></span>
 										<span class="bar"></span>
-										<label class="text-placeholder">Contact Name</label>
+										<label class="text-placeholder">Event Location</label>
 									</div>
 									<div class="group">
-										<input type="text" required>
+										<input type="text" value="" id="event_start_date" class="datepicker" required>
 										<span class="highlight"></span>
 										<span class="bar"></span>
-										<label class="text-placeholder">Mobile Number</label>
+										<label class="text-placeholder">Date</label>
 									</div>
-									<div class="group">
-										<input type="text" required>
-										<span class="highlight"></span>
-										<span class="bar"></span>
-										<label class="text-placeholder">Email</label>
+									<div class="group" id="more-than-one-day-holder" style='display:none'>
+										<p>Does this event go for more than one day</p>
+										<a class='btn btn-danger btn-one-day'>No</a>
+										<a class='btn btn-success btn-more-one-day'>Yes</a>
 									</div>
-
-									<div class="cntr">
-										<p class="small">Is there more than one contact?</p>
-										<input class="hidden-xs-up" id="cbc" type="checkbox" />
-										<label class="cbx" for="cbc"></label><label class="lbl" for="cbc">Yes</label>
-									</div>
-									<input class="hidden-xs-up" id="cba" type="checkbox" />
-									<label class="cbx" for="cba"></label><label class="lbl" for="cba">No</label>
-									<br>
-									<br>
-									<div class="group">
-										<a href="#" id="next-1" data-unlock="m_d" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="card">
-						<div class="card-header" role="tab" id="headingThree">
-							<h4 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#m_d" aria-expanded="false" aria-controls="m_d">
-          #3 More Details
-        </a>
-							</h4>
-						</div>
-						<div class="collapse" id="m_d" role="tabpanel" aria-labelledby="headingThree">
-							<div class="card-block">
-								<form>
-									<div class="form-group e-d">
-									<h5>Event Description</h5>
-									 <div id="trumbowyg-1">
-										
-									 </div>	
-									</div>
-									<div class="form-upload">
-										<input class="upload" type="file" id="file" custom="custom-file-input">
-										<label>Upload your event banner. But keep it 1000px x 400px please</label>
-									</div>
-									<div class="form-group">
-											<h5>Description of Roles</h5>
-										<div id="trumbowyg-2"></div>	
-									</div>
-									<div class="form-group">
-										<textarea required="required"></textarea>
-										<label class="control-label" for="textarea">Preferred skills and abilities</label><i class="bar"></i>
-									</div>
-									<div class="form-group">
-										<select>
-							<option>No</option>
-							<option>Yes</option>
-							<option>Other</option>
-						  </select>
-										<label class="control-label" for="select">Uniform supplied</label><i class="bar"></i>
-									</div>
-									<div class="form-group">
-										<select>
-							<option>No</option>
-							<option>Yes</option>
-							<option>Other</option>
-						  </select>
-										<label class="control-label" for="select">Any licenses required?</label><i class="bar"></i>
-									</div>
-									<div class="form-group">
-										<select>
-							<option>Any Gender</option>
-							<option>Male</option>
-							<option>Female</option>
-						  </select>
-										<label class="control-label" for="select">Workforcers</label><i class="bar"></i>
-									</div>
-									<div class="group">
-										<a href="#" id="next-1" data-unlock="a_s" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<br />
-					<div class="card">
-						<div class="card-header" role="tab" id="headingFour">
-							<h4 class="mb-0">
-								<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#a_s" aria-expanded="false" aria-controls="a_s">
-          #4 Add Shift
-        </a>
-							</h4>
-						</div>
-						<div class="collapse" id="a_s" role="tabpanel" aria-labelledby="headingFour">
-							<div class="card-block">
-								<form>
-									<div class="form-group e-c">
-										<select>
-							<option>All Shifts</option>
-							<option>Multiple Shifts</option>
-						  </select>
-										<label class="control-label" for="select">Shift Category</label><i class="bar"></i>
-									</div>
-									<div class="group">
-										<input class="datepicker" type="text" required>
+									<div class="group" id="finish-day-holder" style='display:none'>
+										<input type="text" value="" class="datepicker" required>
 										<span class="highlight"></span>
 										<span class="bar"></span>
 										<label class="text-placeholder">Date</label>
@@ -281,50 +127,262 @@
 										<input type="text" required>
 										<span class="highlight"></span>
 										<span class="bar"></span>
-										<label class="text-placeholder">Event Location</label>
+										<label class="text-placeholder">Event Website</label>
 									</div>
-									<div class="form-group">
-											<h5>Shift Requirements</h5>
-										<div id="trumbowyg-3"></div>	
-									</div>
-									<p class="">How Many Staff Are Needed?</p>
-									<div class="input-group spinner">
-										
-										<input type="text" class="form-control" value="1">
-										<div class="input-group-btn-vertical">
-										  <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
-										  <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
-										</div>
-										
-									 </div>
-									 <div class="group">
-										<a href="#" id="next-1" data-unlock="a_j" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
-									</div>
+									<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+
 								</form>
+								<div class='col-sm-6 map_holder'>
+									<div id='map-canvas'></div>
+								</div>
 							</div>
+							<!-- END FORM EVENT -->
 						</div>
 					</div>
-
 				</div>
-				<!-- END ACCORDION -->
-				</div>
-			</div><!-- END MAIN CONTENT -->
-		
-	
+				<br />
 
-		
-		<!-- Bootstrap core JavaScript
+
+				<!-- EVENT CONTACT -->
+				<div class="card">
+					<div class="card-header" role="tab" id="headingTwo">
+						<h4 class="mb-0">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#e_c" aria-expanded="false" aria-controls="e_c">
+          #2 Event Contact
+        </a>
+						</h4>
+					</div>
+					<div class="collapse" id="e_c" role="tabpanel" aria-labelledby="headingTwo">
+						<div class="card-block">
+							<form>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Company Name</label>
+								</div>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Contact Name</label>
+								</div>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Mobile Number</label>
+								</div>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Email</label>
+								</div>
+
+								<div class="cntr">
+									<p class="small">Is there more than one contact?</p>
+									<input class="hidden-xs-up" id="cbc" type="checkbox" />
+									<label class="cbx" for="cbc"></label><label class="lbl" for="cbc">Yes</label>
+								</div>
+								<input class="hidden-xs-up" id="cba" type="checkbox" />
+								<label class="cbx" for="cba"></label><label class="lbl" for="cba">No</label>
+								<br>
+								<br>
+								<div class="group">
+									<a href="#" id="next-1" data-unlock="m_d" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<br>
+
+				<!--MORE DETAILS -->
+				<div class="card">
+					<div class="card-header" role="tab" id="headingThree">
+						<h4 class="mb-0">
+							<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#m_d" aria-expanded="false" aria-controls="m_d">
+          #3 More Details
+        </a>
+						</h4>
+					</div>
+					<div class="collapse" id="m_d" role="tabpanel" aria-labelledby="headingThree">
+						<div class="card-block">
+							<form>
+								<div class="form-group e-d">
+									<h5>Event Description</h5>
+									<div id="trumbowyg-1">
+
+									</div>
+								</div>
+								<div class="form-upload">
+									<input class="upload" type="file" id="file" custom="custom-file-input">
+									<label>Upload your event banner. But keep it 1000px x 400px please</label>
+								</div>
+								<div class="form-group">
+									<h5>Description of Roles</h5>
+									<div id="trumbowyg-2"></div>
+								</div>
+								<div class="form-group">
+									<textarea required="required"></textarea>
+									<label class="control-label" for="textarea">Preferred skills and abilities</label><i class="bar"></i>
+								</div>
+								<div class="form-group">
+									<select>
+							<option>No</option>
+							<option>Yes</option>
+							<option>Other</option>
+						  </select>
+									<label class="control-label" for="select">Uniform supplied</label><i class="bar"></i>
+								</div>
+								<div class="form-group">
+									<select>
+							<option>No</option>
+							<option>Yes</option>
+							<option>Other</option>
+						  </select>
+									<label class="control-label" for="select">Any licenses required?</label><i class="bar"></i>
+								</div>
+								<div class="form-group">
+									<select>
+							<option>Any Gender</option>
+							<option>Male</option>
+							<option>Female</option>
+						  </select>
+									<label class="control-label" for="select">Workforcers</label><i class="bar"></i>
+								</div>
+								<div class="group">
+									<a href="#" id="next-1" data-unlock="a_s" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<br />
+
+				<!--ADD SHIFT -->
+				<div class="card">
+					<div class="card-header" role="tab" id="headingFour">
+						<h4 class="mb-0">
+							<a aria-expanded="false" aria-controls="a_s" data-toggle="modal" data-target="#myModal"> Add Shift +
+							</a>
+						</h4>
+					</div>
+					<div class="collapse" id="a_s" role="tabpanel" aria-labelledby="headingFour">
+						
+					</div>
+				</div>
+			</div>
+			<!-- END ACCORDION -->
+		</div>
+		<!-- END COLUMN -->
+	</div><!-- END MAIN CONTENT -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <h4 class="modal-title" id="myModalLabel">Enter shift details</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      
+      </div>
+      <div class="modal-body">
+        <div class="card-block">
+							<form>
+								
+							<div class="group">
+								<input class="" type="text" name='' event_id required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="text-placeholder">Title</label>
+							</div>
+							
+							<p class="">How Many Staff Are Needed?</p>
+								<div class="input-group spinner">
+									<input type="text" class="form-control" value="1">
+									<div class="input-group-btn-vertical">
+										<button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+										<button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+									</div>
+								</div>
+							<div class="group">	
+							
+									<input class="datepicker" type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Date</label>
+								
+							</div>	
+							<div class="group">
+									<input class="datepicker" type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Date</label>
+								</div>	
+							<div class="group">
+							<div class="input-group bootstrap-timepicker timepicker">
+            					<input id="timepicker" type="text" class="form-control input-small">
+           						 <span class="input-group-addon"><i class="glyphicon glyphicon-time"></i></span>
+       						 </div>
+       						</div>	
+       						<br> 
+								<!--<div class="form-group e-c">
+									<select>
+							<option>All Shifts</option>
+							<option>Multiple Shifts</option>
+						  </select>
+									<label class="control-label" for="select">Shift Category</label><i class="bar"></i>
+								</div>-->
+								<!--<div class="group">
+									<input class="datepicker" type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Date</label>
+								</div>
+								<div class="group">
+									<input type="text" required>
+									<span class="highlight"></span>
+									<span class="bar"></span>
+									<label class="text-placeholder">Event Location</label>
+								</div>
+								<div class="form-group">
+									<h5>Shift Requirements</h5>
+									<div id="trumbowyg-3"></div>
+								</div>-->
+								
+								<div class="group">
+									<a href="#" id="next-1" data-unlock="a_j" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+								</div>
+							</form>
+						</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+	<!-- Bootstrap core JavaScript
     ================================================== -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script src="dist/trumbowyg.min.js"></script>
 	<script src="dist/trumbowyg.js"></script>
+	 <script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
+	
 	<script src="js/scripts-date.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq10WQ5iexOEyCvy01hKyTPXEOjttR3jg&libraries=places'></script>
 	<script src="js/add_event.js"></script>
-	
-	
+
+
 
 	<!--
 <script src="main.js"></script>
@@ -337,9 +395,9 @@
 
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-	</body>
-	
-	
-	
-	
+</body>
+
+
+
+
 </html>

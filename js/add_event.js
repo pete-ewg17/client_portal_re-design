@@ -1,3 +1,4 @@
+
 var markers = [];
 $(document).ready(function() {
     var lng = -37.817782;

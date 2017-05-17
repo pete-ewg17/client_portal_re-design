@@ -1,3 +1,6 @@
+
+  $('#timepicker').timepicker();
+		console.log('#timepicker');
 /*============
   SIDE BAR
 =============*/
