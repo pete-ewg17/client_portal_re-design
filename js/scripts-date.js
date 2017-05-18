@@ -1,7 +1,4 @@
 
-$('#timepicker').timepicker();
-$('#timepicker-1').timepicker();
-
 	/*CALLING WSIWYG*/
 	$('#trumbowyg-1').trumbowyg();
 	$('#trumbowyg-2').trumbowyg();

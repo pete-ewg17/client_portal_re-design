@@ -1,4 +1,3 @@
-
 var markers = [];
 $(document).ready(function() {
     var lng = -37.817782;
@@ -68,6 +67,21 @@ console.log(place);
             $("#state").val(ev_state);
         });
     }
+    
+    $(".tp").timepicker({
+    	 minuteStep: 5
+});
+$(".tp").focus(function() {
+  $( this ).blur();
+  var top = $(this).closest('.timepicker');
+  var btn = $(top).find(".input-group-addon");
+  if($(btn).length > 0) {
+  if(!$(btn).hasClass("bg-success")) {
+  	  $(btn).addClass("bg-success");
+  	  setInterval(function(){ $(btn).removeClass("bg-success"); },1000);
+    }
+	}
+});
 });
 
 

@@ -1191,6 +1191,20 @@ height:400px;
 display:none;
 }
 
+.bootstrap-timepicker-widget.dropdown-menu {
+		display: block;
+}
+.bootstrap-timepicker-widget td {
+		text-align:center;
+		padding:4px 8px;
+}
+.bootstrap-timepicker-widget input {
+		width:60px;
+}
+
+.input-group-addon {
+	transition: all 500ms linear;
+}
 
 
 
