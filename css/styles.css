@@ -1200,6 +1200,7 @@ display:none;
 }
 .bootstrap-timepicker-widget input {
 		width:60px;
+		text-align: center;
 }
 
 .input-group-addon {
