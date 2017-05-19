@@ -68,6 +68,9 @@ console.log(place);
         });
     }
     
+	
+	
+// TIMEPICKER BLUR
     $(".tp").timepicker({
     	 minuteStep: 5
 });
@@ -83,6 +86,18 @@ $(".tp").focus(function() {
 	}
 });
 });
+
+//INPUT BLUR FOR SPINNER AND DATEPICKER 
+
+$('.i-s').focus(function(){
+	$(this).blur();
+});
+
+$('.d-p').focus(function(){
+	$(this).blur();
+});
+
+
 
 
 $("body").on('click','.form-next-btn',function(e) {
@@ -105,6 +120,9 @@ function validate_form(form_id) {
     return true;
 }
 
+
+
+// CHECKBOX 
 $("#cbx").change(function(){
     if($(this).prop("checked")) {
         var box = $(this).closest(".event-details").find(".form-event");

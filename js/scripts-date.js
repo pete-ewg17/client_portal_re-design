@@ -9,7 +9,7 @@
   SIDE BAR
 =============*/
 
-$(document).ready(function() {
+$(function() {
 	$('.nav-trigger').click(function() {
 		$('.side-nav').toggleClass('visible');
 	});
@@ -21,7 +21,7 @@ $(document).ready(function() {
   DATE PICKER
 =============*/
 
-$(document).ready(function(){
+$(function(){
    $('.datepicker').datepicker({
       format: "D d M yyyy",
 	  todayHighlight: true,

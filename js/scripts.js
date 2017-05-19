@@ -1,8 +1,9 @@
-$(document).ready(function() {
+
+$(function() {
 	$('.nav-trigger').click(function() {
 		$('.side-nav').toggleClass('visible');
 	});
-  
+
   
   $(function () {
   $('[data-toggle="tooltip"]').tooltip("")
