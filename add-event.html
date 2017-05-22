@@ -99,7 +99,7 @@
 							<div class="form-event row" id="e_d">
 								<form class='col-sm-6'>
 									<div class="group">
-										<input class="" type="text" name='' event_id required>
+										<input class="" type="text" name='' id="event_id" required>
 										<span class="highlight"></span>
 										<span class="bar"></span>
 										<label class="text-placeholder">Event Name</label>
@@ -305,25 +305,29 @@
 				</div>
 				<div class="modal-body">
 					<div class="card-block">
-						<p class="pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore, nisi vel ab consequuntur cumque repudiandae, quaerat dolores consectetur autem non ipsam. Ex a corporis ut perferendis, iusto veniam saepe.</p>
+						<p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore, nisi vel ab consequuntur cumque repudiandae, quaerat dolores consectetur autem non ipsam. Ex a corporis ut perferendis, iusto veniam saepe.</p>
 
 						<form>
-						<div class="form-group">
-									<select>
-							<option value="Activation Staff">Activation Staff</option>
-							<option value="Event Coordinator">Event Co-ordinator</option>
-							<option value="Forklift Driver">Forklift Driver</option>
-							<option value="Hospitality Staff">Hospitality Staff</option>
-							<option value="Mascot">Mascot</option>
-							<option value="Mascot Minder">Mascot Minder</option>
-							<option value="Merchandise Staff">Merchandise Staff</option>
-							<option value="Operations Staff">Operations Staff</option>
-							<option value="Ticketing Staff">Ticketing Staff</option>
-							<option value="Volunteers">Volunteers</option>
+						<div class="form-group e-c">
+							<select name="Staff Needed" id="select-box">
+										<option value="Activation Staff">Activation Staff</option>
+										<option value="Event Coordinator">Event Co-ordinator</option>
+										<option value="Forklift Driver">Forklift Driver</option>
+										<option value="Hospitality Staff">Hospitality Staff</option>
+										<option value="Mascot">Mascot</option>
+										<option value="Mascot Minder">Mascot Minder</option>
+										<option value="Merchandise Staff">Merchandise Staff</option>
+										<option value="Operations Staff">Operations Staff</option>
+										<option value="Ticketing Staff">Ticketing Staff</option>
+										<option value="Volunteers">Volunteers</option>
+										<option class="comment-open" value="other">Other</option>
+											<textarea id="comment" type="textarea" placeholder="What kind of staff are you after?"></textarea>
 						  </select>
-									<label class="control-label" for="select">What kind of staff are you after?</label><i class="bar"></i>
+						
+									<label class="control-label" for="select">What kind of staff are you after?</label>
+									
+							
 							</div>
-
 								<p class="">How Many Staff Are Needed?</p>
 								<div class="input-group spinner">
 									<input type="text" class="form-control i-s" value="1">
@@ -382,7 +386,6 @@
 	<script src="dist/trumbowyg.js"></script>
 	<script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
-
 	<script src="js/scripts-date.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq10WQ5iexOEyCvy01hKyTPXEOjttR3jg&libraries=places'></script>
 	<script src="js/add_event.js"></script>

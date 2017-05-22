@@ -1086,9 +1086,25 @@ input:focus~.highlight {
 .form-group, .e-d {
 	margin-top: 0;
 }
-.form-group, .e-c {
+.form-group {
 margin: 14px 0 37px 0;
 }	
+
+.e-c {
+	margin: 14px 0;
+}
+
+#comment {
+	width: 320px;
+	margin: 0.8em 0;
+	height: 100px;
+	overflow: auto;
+	padding: 0 0.3em;
+  display: none;
+	border: 1px solid #d5dae5;
+	border-radius: 0.25em;
+	transition-property: none;
+}
 
 /* SPINNER */
 
@@ -1207,22 +1223,29 @@ display:none;
 	transition: all 500ms linear;
 }
 
-
-
 /* MY DETAILS */
 
+.details {
+	height: auto;
+}
+
 #leftPanel{
-    background-color:#0079ac;
-    color:#fff;
-    text-align: center;
+		color:#fff;
+    
 }
 
 #rightPanel{
-    min-height:415px;
+    
+}
+
+.client-photo {
+	border-radius: 50%;
+	height: 200px;
+	width:  200px;
 }
 
 /* Credit to bootsnipp.com for the css for the color graph */
-.colorgraph {
+/*.colorgraph {
   height: 5px;
   border-top: 0;
   background: #c4e17f;
@@ -1230,7 +1253,7 @@ display:none;
   background-image: -webkit-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   background-image: -moz-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
   background-image: -o-linear-gradient(left, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
-  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);*/
 }
 
 

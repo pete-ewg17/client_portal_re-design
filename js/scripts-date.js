@@ -68,6 +68,16 @@ $(function () {
 			}
   });
 });
+
+// Other Box Open 
+
+$("#select-box").change(function() {
+  if ($("#select-box").val() == "other") {
+    $("#comment").show("100");
+  }else {
+    $("#comment").hide("toggle");
+  }
+});
   
 
 
