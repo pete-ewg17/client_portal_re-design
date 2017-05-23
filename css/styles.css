@@ -371,12 +371,15 @@ h3 {
 	flex-grow: 10;
 	height: 350px;
 	margin: 15px;
-	border-radius: 6px;
+	border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 	background-color: #ffffff;
 	position: relative;
 }
 
 .widget .title {
+		border-top-left-radius: 6px;
+  	border-top-right-radius: 6px;
 		background-color: #eef1f7;
     border-bottom: 1px solid #dfe4ec;
     padding: 10px;
@@ -464,7 +467,7 @@ td {
 
 .flip-cube {
 	margin: 0 auto;
-	height: 60px;
+	height: 15px;
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
 	/* Animate the transform properties */
@@ -478,9 +481,9 @@ td {
 
 .flip-front,
 .flip-back {
-	display: flex;
+		display: flex;
     justify-content: space-around;
-    height: 60px;
+    height: 15px;
     border: 1px solid transparent;
 }
 
@@ -508,7 +511,9 @@ td {
 	border: 1px solid transparent;	
 }
 
-
+.flip-front:hover {
+	visibility: hidden;
+}
 
 /* Rotate the cube */
 
@@ -520,29 +525,23 @@ td {
 	border: none;
 }
 
-.flip-cube:hover .flip-front {
-  visibility: hidden;
-}
-
 .flip-back ul {
-	width: 50%;
-	min-width: 30px;
 	list-style: none;
-	display: flex;
-	justify-content: space-around;
-	margin: -14px;
+	display: inline-block;
+	margin: -23px;
 	padding: 0;
 }
 
 .flip-icons {
 	display: inline-block;
+	margin: 1.3rem;
 	font-size: 1.2rem;
 }
 
 .fa-exclamation-triangle {
 	color: red;
-	padding-left: 5px;
-	font-size: 1em;
+	padding-left: 0.8em;
+	font-size: 8px;
 	display: inline-block;
 }
 
