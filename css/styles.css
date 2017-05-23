@@ -495,10 +495,10 @@ td {
 	border: 1px solid transparent;
 }
 
-/*.flip-front p {
+.flip-front p {
 	margin-top: 1%;
-    margin-bottom: 1rem;
-}*/
+  margin-bottom: 1%;
+}
 
 .flip-back {
 	-webkit-transform: rotateX(-90deg) translateZ(0px);
@@ -518,7 +518,7 @@ td {
 	-webkit-transform: rotateX(90deg);
 	transform: rotateX(92deg);
 	/* Text bleed at 90º */
-	animation-delay: 3.5s;
+	animation-delay: 5s;
 	border: none;
 }
 
