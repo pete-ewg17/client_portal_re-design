@@ -429,7 +429,7 @@ h3 {
 .talent td,
 .talent th {
 	border: 1px solid #ddd;
-	padding: 1em;
+	
 	text-align: center;
 }
 
@@ -465,8 +465,7 @@ td {
 /* Container box to set the sides relative to */
 
 .flip-cube {
-	margin: 0 auto;
-	height: 15px;
+	height: 30px;
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
 	/* Animate the transform properties */
@@ -475,14 +474,13 @@ td {
 	/* <-NB */
 }
 
-
 /* The two faces of the cube */
 
 .flip-front,
 .flip-back {
 		display: flex;
     justify-content: space-around;
-    height: 15px;
+    height: 30px;
     border: 1px solid transparent;
 }
 
@@ -503,8 +501,8 @@ td {
 }*/
 
 .flip-back {
-	-webkit-transform: rotateX(-90deg) translateZ(-50px);
-	transform: rotateX(-90deg) translateZ(-50px);
+	-webkit-transform: rotateX(-90deg) translateZ(0px);
+	transform: rotateX(-90deg) translateZ(0px);
 	backface-visibility: visible;
 	-webkit-backface-visibility: visible;
 	border: 1px solid transparent;	
@@ -527,7 +525,7 @@ td {
 .flip-back ul {
 	list-style: none;
 	display: inline-block;
-	margin: -23px;
+	margin: -15px;
 	padding: 0;
 }
 
