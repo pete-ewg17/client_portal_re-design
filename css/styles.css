@@ -1245,16 +1245,37 @@ display:none;
   MODAL - Add Event
 ==================*/
 
+.disclaimer {
+	display: none;
+}
+
+
 /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 620px) {
 			
 			.card-block {
 				padding: 0.5rem;
 			}
+			
+			.disclaimer {
+				display: block;
+				color: #0082c2;
+				font-weight: 800;
+				font-size: 1.2em;
+			}
+			
+			.inst-mob {
+				display: none;
+			}
+			
+			.card, 
+			.form-title,
+			.group{
+				display: none;
+			}
 
     }
-
-
+}
 
 
 
