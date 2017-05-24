@@ -107,7 +107,7 @@ a:focus {
 	width: 100%;
 	z-index: 3;
 	height: 44px;
-	background-color: #015249;
+	background-color: #86A62A;
 }
 
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
@@ -162,7 +162,7 @@ a:focus {
 span:after {
 	width: 20px;
 	height: 2px;
-	background-color: #57bc90;
+	background-color: #fffefe;
 	position: absolute;
 	color: #ffffff;
 }
@@ -1266,10 +1266,7 @@ display:none;
 }
 
 .img-container:hover .client-photo {
-  opacity: 0.5;
-	background: red;
-	background-blend-mode: saturation;
-  
+  opacity: 0.5;  
 }
 
 .img-container:hover .middle {
@@ -1357,7 +1354,7 @@ display:none;
 			
 			.card, 
 			.form-title,
-			.group{
+			.disable {
 				display: none;
 			}
 
