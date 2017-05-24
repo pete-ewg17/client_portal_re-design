@@ -1271,6 +1271,11 @@ display:none;
   MODAL - Add Event
 ==================*/
 
+.notice-select {
+	margin: 0em 14em 2em 14em;
+  color: yellowgreen;
+}
+
 .disclaimer {
 	display: none;
 }
