@@ -210,7 +210,11 @@ span:after {
 	position: relative;
 }
 
-.side-nav ul li.active:before {
+.side-nav ul li:hover {
+	background: yellowgreen;
+}
+
+.side-nav ul li.active:after {
 	content: '';
 	position: absolute;
 	width: 4px;
@@ -219,6 +223,7 @@ span:after {
 	left: 0;
 	background-color: #fff;
 }
+
 
 .side-nav ul li a {
 	color: #fffefe;
@@ -407,6 +412,11 @@ h3 {
 	background-color: #e4e4e4;
 	height: 75%;
 	flex-basis: 10%;
+}
+
+
+.title a {
+	color: yellowgreen;
 }
 
 /*TABLE STYLES*/
@@ -611,7 +621,7 @@ td {
 }
 
 .new-notice {
-	background-color: #57bc90!important;
+	background-color: yellowgreen!important;
 	color: #fff !important;
 }
 
@@ -1292,6 +1302,25 @@ display:none;
 
     }
 }
+
+
+/*================
+  INVOICES
+==================*/
+
+.view-inv  {
+	background: red;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
