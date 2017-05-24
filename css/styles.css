@@ -1253,6 +1253,8 @@ display:none;
   backface-visibility: hidden;
 	background-color: red;
 	background-blend-mode: screen;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	
 }
 
 .middle {
@@ -1266,12 +1268,12 @@ display:none;
 }
 
 .img-container:hover .client-photo {
-  opacity: 0.5;  
+  opacity: 0.5;
+	transform: scale(1.1);
 }
 
 .img-container:hover .middle {
   opacity: 1;
-	
 }
 
 .text-container {
