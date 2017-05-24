@@ -643,7 +643,6 @@ td {
 .insta {
 	overflow-x: auto;
 	height: 302px;
-	border-radius: 0px 0px 6px 6px;
 }
 
 
@@ -1278,7 +1277,7 @@ display:none;
 }
 
 .text-container {
-  color: white;
+  
   font-size: 1.2em;
 }
 
