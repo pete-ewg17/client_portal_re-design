@@ -24,4 +24,9 @@ $(function() {
 });
 
 
+// INTRO JS 
 
+$("#flexi_form_start").click(function() {
+			console.log("testies");
+			introJs().start();
+		});

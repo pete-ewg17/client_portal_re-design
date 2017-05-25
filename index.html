@@ -4,266 +4,284 @@
 ?>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Client Portal | Event Workforce Group Talent</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Client Portal | Event Workforce Group Talent</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- Intro JS template -->
+	<link href="css/introjs.min.css">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
 
 </head>
 <html>
 
 <body>
-  <div class="header">
-    <div class="logo">
-      <i class="fa fa-rebel"></i>
-      <span>Client Portal</span>
-    </div>
-    <a href="#" class="nav-trigger"><span></span></a>
-  </div>
-  <!-- MOBILE LOGO-->
-  <div class="side-nav">
-    <div class="logo">
-      <i class="fa fa-rebel"></i>
-      <a href="index.html" style="color: #e4e4e4; text-decoration: none;"><span>Client Portal</span></a>
-    </div>
-    <!--NAVIGATION-->
-    <nav>
-      <ul>
-       <li class="active">
-          <a href="index.html">
-            <span><i class="fa fa-home"></i></span>
-            <span>Home</span>
-          </a>
-        </li>
-        <li>
-          <a href="my-details.html">
-            <span><i class="fa fa-user"></i></span>
-            <span>My Details</span>
-          </a>
-        </li>
-        <li>
-          <a href="past-events.html">
-            <span><i class="fa fa-calendar-minus-o"></i></span>
-            <span>Past Events</span>
-          </a>
-        </li>
-        <li>
-          <a href="invoices.html">
-            <span><i class="fa fa-clipboard"></i></span>
-            <span>Invoices</span>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span><i class="fa fa-rocket"></i></span>
-            <span>Log Out</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+	<div class="header">
+		<div class="logo">
+			<i class="fa fa-rebel"></i>
+			<span>Client Portal</span>
+		</div>
+		<a href="#" class="nav-trigger"><span></span></a>
+	</div>
+	<!-- MOBILE LOGO-->
+	<div class="side-nav">
+		<div class="logo">
+			<i class="fa fa-rebel"></i>
+			<a href="index.html" style="color: #e4e4e4; text-decoration: none;"><span>Client Portal</span></a>
+		</div>
+		<!--NAVIGATION-->
+		<nav>
+			<ul>
+				<li class="active">
+					<a href="index.html">
+						<span><i class="fa fa-home"></i></span>
+						<span>Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="my-details.html">
+						<span><i class="fa fa-user"></i></span>
+						<span>My Details</span>
+					</a>
+				</li>
+				<li>
+					<a href="past-events.html">
+						<span><i class="fa fa-calendar-minus-o"></i></span>
+						<span>Past Events</span>
+					</a>
+				</li>
+				<li>
+					<a href="invoices.html">
+						<span><i class="fa fa-clipboard"></i></span>
+						<span>Invoices</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span><i class="fa fa-rocket"></i></span>
+						<span>Log Out</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
-  <div class="main-content">
-    <div class="title">
-      <h3>Welcome To Your EWG Talent Portal</h3>
-    </div>
-    <div class="main">
-      <div class="widget events">
-       <div class="title">
-					Current Events <strong><a href="add-event.html">Add New <i class="fa fa-plus"></i></a></strong> 
-        </div>
-        <div class="current-event">
-          <section class="wrapper">
-            <table class="talent table table-fixed">
-              <thead>
-                <tr>
-                  <th>Event Name</th>
-                  <th>Status</th>
-                  <th class="hide">Event ID</th>
-                  <th class="hide">Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <div class="flip-cube">
-                      <div class="flip-front">
-                        <p> Grooving the Moo, Wayville, SA  <i class="fa fa-exclamation-triangle pulse" id="brief-needed" aria-hidden="true" title="need brief"></i><span class="danger pulse"> Brief-Needed</span></p>
-                      </div>
-                      <div class="flip-back">
-                        <ul class="flip-ul">
-                          <li class="flip-icons">
-                           <a href="#">
-                            <i class="fa fa-address-card-o tiptool">
+	<div class="main-content">
+		<div class="title flexi_form_title">
+			<h3 data-step="1" data-intro="This is flexible forms tour">Welcome To Your EWG Talent Portal</h3>
+			<a id="flexi_form_start" href="javascript:void(0);"><button class="btn btn-lg btn-success">Start Tour</button></a>
+		</div>
+		<div class="main">
+			<div class="widget events">
+				<div class="title">
+					Current Events <strong><a href="add-event.html">Add New <i class="fa fa-plus"></i></a></strong>
+				</div>
+				<div class="current-event">
+					<section class="wrapper">
+						<table class="talent table table-fixed">
+							<thead>
+								<tr>
+									<th>Event Name</th>
+									<th>Status</th>
+									<th class="hide">Event ID</th>
+									<th class="hide">Date</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="flip-cube">
+											<div class="flip-front">
+												<p> Grooving the Moo, Wayville, SA <i class="fa fa-exclamation-triangle pulse" id="brief-needed" aria-hidden="true" title="need brief"></i><span class="danger pulse"> Brief-Needed</span></p>
+											</div>
+											<div class="flip-back">
+												<ul class="flip-ul">
+													<li class="flip-icons">
+														<a href="#">
+															<i class="fa fa-address-card-o tiptool">
                               <span class="tooltiptext">View Event</span>   
                            </i>
-                            </a>     
-                          </li>
-                          <li class="flip-icons">
-                          <a href="#"><i class="fa fa-pencil tiptool">
+														</a>
+													</li>
+													<li class="flip-icons">
+														<a href="#"><i class="fa fa-pencil tiptool">
                               <span class="tooltiptext">Edit Event</span>  
                             </i>
                           </a>
-                          </li>
-                          <li class="flip-icons">
-                            <a href="#" title="Download Event"><i class="fa fa-cloud-download tiptool">
+													</li>
+													<li class="flip-icons">
+														<a href="#" title="Download Event"><i class="fa fa-cloud-download tiptool">
                             	<span class="tooltiptext">Download Roster</span> 
                             </i></a>
-                          </li>
-                          <li class="flip-icons">
-                            <a href="#" title="Contact Us"><i class="fa fa-envelope tiptool">
+													</li>
+													<li class="flip-icons">
+														<a href="#" title="Contact Us"><i class="fa fa-envelope tiptool">
                             	<span class="tooltiptext">Contact Us</span> 
                             </i></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                  <!--FRONT -->
-                  <td class="btn-warning">Submitted</td>
-                  <td class="hide">EWG-12345</td>
-                  <td class="hide">Friday 28th Apr</td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="flip-cube">
-                      <div class="flip-front">
-                        <p>
-                          Grooving the Moo, Maitland, NSW
-                        </p>
-                      </div>
-                      <div class="flip-back">
-                        <ul class="flip-ul">
-                          <li class="flip-icons">
-                           <a href="#">
-                            <i class="fa fa-address-card-o tiptool">
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<!--FRONT -->
+									<td class="btn-warning">Submitted</td>
+									<td class="hide">EWG-12345</td>
+									<td class="hide">Friday 28th Apr</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="flip-cube">
+											<div class="flip-front">
+												<p>
+													Grooving the Moo, Maitland, NSW
+												</p>
+											</div>
+											<div class="flip-back">
+												<ul class="flip-ul">
+													<li class="flip-icons">
+														<a href="#">
+															<i class="fa fa-address-card-o tiptool">
                               <span class="tooltiptext">View Event</span>   
                            </i>
-                            </a>     
-                          </li>
-                          <li class="flip-icons">
-                          <a href="#"><i class="fa fa-pencil tiptool">
+														</a>
+													</li>
+													<li class="flip-icons">
+														<a href="#"><i class="fa fa-pencil tiptool">
                               <span class="tooltiptext">Edit Event</span>  
                             </i>
                           </a>
-                          </li>
-                          <li class="flip-icons">
-                            <a href="#" title="Download Event"><i class="fa fa-cloud-download tiptool">
+													</li>
+													<li class="flip-icons">
+														<a href="#" title="Download Event"><i class="fa fa-cloud-download tiptool">
                             	<span class="tooltiptext">Download Roster</span> 
                             </i></a>
-                          </li>
-                          <li class="flip-icons">
-                            <a href="#" title="Contact Us"><i class="fa fa-envelope tiptool">
+													</li>
+													<li class="flip-icons">
+														<a href="#" title="Contact Us"><i class="fa fa-envelope tiptool">
                             	<span class="tooltiptext">Contact Us</span> 
                             </i></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="btn-success">Live</td>
-                  <td class="hide">EWG-12345</td>
-                  <td class="hide">Saturday 29th Apr</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</td>
+									<td class="btn-success">Live</td>
+									<td class="hide">EWG-12345</td>
+									<td class="hide">Saturday 29th Apr</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</div>
 
-      </div>
-      <div class="widget">
-        <a href="past-events.html"><div class="title">Past Events</div></a>
-        <div class="past-event">
-            <div class="past-wrapper">
-             	<div class="list">
-              	<ul>
-              		<li><span class="past-date">FRI 28th Apr,</span> Grooving The Moo, Wayville </li>
-              		<li><span class="past-date">SAT 29th Apr,</span> Grooving The Moo, Maitland</li>
-              		<li><span class="past-date">SUN 30th Apr,</span> Grooving The Moo, Townsville</li>
-              		<li><span class="past-date">FRI 28th Apr,</span> Grooving The Moo, Wayville</li>
-              		<li><span class="past-date">SAT 29th Apr,</span> Grooving The Moo, Maitland</li>
-              	</ul>
-             </div> 	
-            </div>
-        </div>
-      </div>
-      
-      <!--NOTICEBOARD-->
-      <div class="widget">
+			</div>
+			<div class="widget">
+				<a href="past-events.html">
+					<div class="title">Past Events</div>
+				</a>
+				<div class="past-event">
+					<div class="past-wrapper">
+						<div class="list">
+							<ul>
+								<li><span class="past-date">FRI 28th Apr,</span> Grooving The Moo, Wayville </li>
+								<li><span class="past-date">SAT 29th Apr,</span> Grooving The Moo, Maitland</li>
+								<li><span class="past-date">SUN 30th Apr,</span> Grooving The Moo, Townsville</li>
+								<li><span class="past-date">FRI 28th Apr,</span> Grooving The Moo, Wayville</li>
+								<li><span class="past-date">SAT 29th Apr,</span> Grooving The Moo, Maitland</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--NOTICEBOARD-->
+			<div class="widget">
 				<div class="title">Noticeboard</div>
-        	<div class="past-event">
-            <div class="past-wrapper">
-             	<div class="list">
-              	<ul>
-              		<a data-toggle="modal" data-target="#flipFlop"><li class="new-notice"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Welcome to your new client portal</li></a>
-              		<li class=""> Start here to learn more...</li>
-              		<li>Lorem ipsum</li>
-              	</ul>
-             </div> 	
-            </div>
-        </div>
-        </div>
-      
-      <!--INSTAGRAM-->
-      
-      <div class="widget">
-        <div class="title">Instagram</div>
-        <div class="insta">
-        <div id="instafeed" class="img-responsive"></div>
-        </div>
-       </div>
-        </div><!--END MAIN-->
-        </div><!--END CONTENT-->
-       
+				<div class="past-event">
+					<div class="past-wrapper">
+						<div class="list">
+							<ul>
+								<a data-toggle="modal" data-target="#flipFlop">
+									<li class="new-notice"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Welcome to your new client portal</li>
+								</a>
+								<li class=""> Start here to learn more...</li>
+								<li>Lorem ipsum</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--INSTAGRAM-->
+
+			<div class="widget">
+				<div class="title">Instagram</div>
+				<div class="insta">
+					<div id="instafeed" class="img-responsive"></div>
+				</div>
+			</div>
+
+		</div>
+		<!--END MAIN-->
+	</div>
+	<!--END CONTENT-->
 
 
-<!-- NOTICEBOARD MODAL -->
-<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+	<!-- NOTICEBOARD MODAL -->
+	<div class="modal fade" id="flipFlop" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">&times;</span>
 </button>
-				<h4 class="modal-title" id="modalLabel">Noticeboard</h4>
-			</div>
-			<div class="modal-body">
-				<h4>Welcome to the noticeboard.</h4>
-				<p>Here you will find the latest and greatest updates, tips and tricks to do with your EWG Talent portal.</p>
-			</div>
-			<div class="notice-select" id="selector"><i class="fa fa-4x fa-spinner fa-pulse"></i> </div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<h4 class="modal-title" id="modalLabel">Noticeboard</h4>
+				</div>
+				<div class="modal-body">
+					<h4>Welcome to the noticeboard.</h4>
+					<p>Here you will find the latest and greatest updates, tips and tricks to do with your EWG Talent portal.</p>
+				</div>
+				<div class="notice-select" id="selector"><i class="fa fa-4x fa-spinner fa-pulse"></i> </div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
 
-   
-    
-  <!-- Bootstrap core JavaScript
+
+
+	<!-- Bootstrap core JavaScript
     ================================================== -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/instafeed.js"></script>
-  <script src="js/scripts.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/instafeed.js"></script>
+	<script src="js/intro.js"></script>
+	<script src="js/scripts.js"></script>
 
-  <!--
+	<!--
 <script src="main.js"></script>
 -->
-  <!-- Placed at the end of the document so the pages load faster 
+	<!-- Placed at the end of the document so the pages load faster 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
 
 
 
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="js/ie10-viewport-bug-workaround.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<!--<script src="js/ie10-viewport-bug-workaround.js"></script>-->
 </body>
 
 </html>
