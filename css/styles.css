@@ -476,6 +476,11 @@ td {
 		margin-top: 4%;
     margin-bottom: 1%;
 	}
+	
+	
+	.danger {
+		font-size: 1.1em
+	}
 }
 
 
