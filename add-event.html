@@ -15,10 +15,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link type="text/css" href="css/bootstrap-timepicker.css">
-	<style>
-
-	</style>
 	
+	<!-- Intro JS template -->
+	<link href="css/introjs.css" rel="stylesheet">
+
 </head>
 <html>
 
@@ -81,6 +81,7 @@
 		<div class="title title-mobile">
 			<h4 class="disclaimer">PLEASE NOTE: ADDING EVENTS ONLY SUPPORTED ON DESKTOP AND TABLET</h4>
 			<h3 class="inst-mob">Please follow the instructions below</h3>
+			<button><a class="btn btn-large btn-success" href="javascript:void(0);" onclick="javascript:introJs().addHints();">Tooltips</a></button>
 		</div>
 
 		<div class="col-md-12">
@@ -93,7 +94,7 @@
 			<div id="accordion" class="" role="tablist" aria-multiselectable="true">
 				<div class="card">
 					<div class="card-header" role="tab" id="headingOne">
-						<h4 class="mb-0">
+						<h4 class="mb-0" data-hint="This is a tooltip!" data-hintPosition="top-right" data-position="bottom-right-aligned">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           #1 Event Details 
         </a>
@@ -394,6 +395,7 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/scripts-date.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq10WQ5iexOEyCvy01hKyTPXEOjttR3jg&libraries=places'></script>
+	<script src="js/intro.js"></script>
 	<script src="js/add_event.js"></script>
 
 

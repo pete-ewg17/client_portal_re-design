@@ -38,7 +38,7 @@
 			<a href="index.html" style="color: #e4e4e4; text-decoration: none;"><span>Client Portal</span></a>
 		</div>
 		<!--NAVIGATION-->
-		<nav>
+		<nav data-step="5" data-intro= "This is the way to get around!" data-position="auto">
 			<ul>
 				<li class="active">
 					<a href="index.html">
@@ -64,7 +64,7 @@
 						<span>Invoices</span>
 					</a>
 				</li>
-				<li>
+				<li data-step="6" data-intro= "This is to exit. But why would you want to? We were just getting to know each other. Lets add an event, just click on the button to get started." data-position="right">
 					<a href="#">
 						<span><i class="fa fa-rocket"></i></span>
 						<span>Log Out</span>
@@ -77,14 +77,16 @@
 	<div class="main-content">
 		<div class="title" data-step="1" data-intro= "This is a simple and quick tutorial to get you up and and running with our new exciting portal">
 			<h3>Welcome To Your EWG Talent Portal</h3>
-			<a id="flexi_form_start" href="javascript:void(0);"><button class="btn btn-lg btn-success">Start Tour</button></a>
+			<a id="flexi_form_start" href="javascript:void(0);" onclick="javascript:introJs().setOption('showStepNumbers', false).setOption('showProgress', true).setOption('showBullets', false).start();"><button class="btn btn-lg btn-success">Start Tour</button></a>
 		</div>
 		<div class="main">
 			<div class="widget events">
 				<div class="title">
-					Current Events <strong><a href="add-event.html">Add New <i class="fa fa-plus"></i></a></strong>
+				
+					Current Events <strong><a href="add-event.html" data-step="4" data-intro="This is where you can add your new event, just click on me." data-position="left">Add New <i class="fa fa-plus"></i></a></strong>
+				
 				</div>
-				<div class="current-event" data-step="2" data-intro="Ok, wasn't that fun?" data-position="top">
+				<div class="current-event" data-step="2" data-intro="This is where your current events will live." data-position="bottom">
 					<section class="wrapper">
 						<table class="talent table table-fixed">
 							<thead>
@@ -98,7 +100,7 @@
 							<tbody>
 								<tr>
 									<td>
-										<div class="flip-cube" data-step="3" data-intro="This does everything you need" data-position="bottom">
+										<div class="flip-cube" data-step="3" data-intro="Hover over me, this is where you can view your event, download your roster and make small changes to your event" data-position="bottom">
 											<div class="flip-front">
 												<p> Grooving the Moo, Wayville, SA <i class="fa fa-exclamation-triangle pulse" id="brief-needed" aria-hidden="true" title="need brief"></i><span class="danger pulse"> Brief-Needed</span></p>
 											</div>
@@ -183,6 +185,9 @@
 				</div>
 
 			</div>
+			
+			
+			
 			<div class="widget">
 				<a href="past-events.html">
 					<div class="title">Past Events</div>
