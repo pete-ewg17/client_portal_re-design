@@ -26,8 +26,3 @@ $(function() {
 
 // INTRO JS 
 
-$("#flexi_form_start").click(function() {
-			introJs().setOption('showBullets', false).start;
-			console.log("testies");
-		
-		});

@@ -76,11 +76,18 @@
 
 	<div class="main-content">
 		<div class="title" data-step="1" data-intro= "This is a simple and quick tutorial to get you up and and running with our new exciting portal">
-			<h3>Welcome To Your EWG Talent Portal</h3>
-			<a id="flexi_form_start" href="javascript:void(0);" onclick="javascript:introJs().setOption('showStepNumbers', false).setOption('showProgress', true).setOption('showBullets', false).start();"><button class="btn btn-lg btn-success">Start Tour</button></a>
+			<h3> Welcome To Your EWG Talent Portal</h3>
+			<a class="tour-title disable" id="flexi_form_start" href="javascript:void(0);" onclick="javascript:introJs().setOption('showStepNumbers', false).setOption('showProgress', true).setOption('showBullets', false).start();"><i class="fa fa-info-circle"> </i> Start Tour</a>
 		</div>
+		
+		<div class="alert alert-success alert-dismissable hide-lg">
+  				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+  				<strong>Info!</strong> Looks like you're on a tablet, turn your tablet landscape for best performance.
+</div>
+		
 		<div class="main">
 			<div class="widget events">
+				
 				<div class="title">
 				
 					Current Events <strong><a href="add-event.html" data-step="4" data-intro="This is where you can add your new event, just click on me." data-position="left">Add New <i class="fa fa-plus"></i></a></strong>
