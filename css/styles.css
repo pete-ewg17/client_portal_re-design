@@ -33,7 +33,7 @@ h3 {
 	color: #555;
 }
 
-a.tour-title{
+a.tour-title {
 	color: #b71c1c!important;
 }
 
@@ -487,13 +487,10 @@ td {
 	.hide,
 	.hide-lg {
 		display: none;
-}
-	
-	
+	}
 	.flip-front p {
 		font-size: 0.8em;
 		margin-top: 1.5%!important;
-		
 	}
 	.danger {
 		font-size: 1.1em
@@ -501,15 +498,15 @@ td {
 }
 
 @media screen and (max-width: 768px) {
-	.hide-lg{
+	.hide-lg {
 		display: block;
 	}
 }
 
 @media screen and (min-width: 768px) {
-		.hide-lg {
+	.hide-lg {
 		display: none;
-}
+	}
 }
 
 
@@ -1428,8 +1425,29 @@ input:focus~.highlight {
 	}*/
 }
 
-
+.fl-wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 }
+
+/**/
+@media only screen and (max-width: 992px) {
+	.fl-wrap {
+	
+	flex-direction: column;
+		
+}
+}
+
+
+
+
+
+
+
+
 
 /*================
   INVOICES

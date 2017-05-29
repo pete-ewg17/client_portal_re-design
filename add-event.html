@@ -315,7 +315,7 @@
 				<div class="modal-body">
 						<p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore, nisi vel ab consequuntur cumque repudiandae, quaerat dolores consectetur autem non ipsam. Ex a corporis ut perferendis, iusto veniam saepe.</p>
 
-						<form class="">
+						<form>
 							<div class="form-group e-c">
 								<select name="Staff Needed" id="select-box">
 										<option value="Activation Staff">Activation Staff</option>
@@ -345,7 +345,7 @@
            					 <span class="fa fa-minus"></span>
 										</button>
 								</span>
-								<input type="text" data-ride="spinner" id="spinner" class="form-control input-number i-s" value="1">
+								<input type="text" data-ride="spinner" id="spinner" class="form-control input-number i-s" value="1" style="text-align:center;">
 								<span class="input-group-btn">
         					<button type="button" class="btn btn-default" data-value="increase" data-target="#spinner" data-toggle="spinner">
             					<span class="fa fa-plus"></span>
@@ -356,29 +356,35 @@
 							<div class="input margin-bottom-sm" id="basicExample">
 							<br>
 								<p>When is your event?</p>
+							<div class="fl-wrap">
 								<div class="input-group margin-bottom-sm">
 								
 									<span class="input-group-addon"><i class="fa fa-calendar-o fa-fw"></i></span>
-									<input class=" datepicker" type="text" class="" />
+									<input placeholder="Date Start" class=" datepicker" type="text" class="" />
 								</div>
+								
 								<div class="input-group margin-bottom-sm">
 								
+									
 									<span class="input-group-addon"><i class="fa fa-clock-o fa-fw"></i></span>
-									<input type="text" class="time start tp" />
+									<input placeholder="Time Start!" type="text" class="time start tp" />
 								</div>	
 								<br>
-								<p>to</p>
-								<br>
 								
+								<br>
+							</div>
+								
+								<div class="fl-wrap">
 								<div class="input-group margin-bottom-sm">
 									<span class="input-group-addon"><i class="fa fa-calendar-o fa-fw"></i></span>
-									<input type="text" class="datepicker" />	
+									<input placeholder="Date End" type="text" class="datepicker" />	
 								</div>
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-clock-o fa-fw"></i></span>
-									<input type="text" class="time end tp" />
+									<input placeholder="Time End" type="text" class="time end tp" />
 								</div>
 							</div>	
+							</div>		
 						</form>
 				</div>
 				<!-- END MODAL BODY-->
