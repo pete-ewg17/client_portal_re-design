@@ -1048,7 +1048,7 @@ input:focus~.highlight {
 }
 
 .form-group select {
-	width: 320px;
+	width: 100%;
 	font-size: 1rem;
 	height: 1.6rem;
 	padding: 0.125rem 0.125rem 0.0625rem;

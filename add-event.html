@@ -10,13 +10,14 @@
 	<title>Client Portal | Event Workforce Group Talent</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="dist/ui/trumbowyg.min.css">
-	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
 	<link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css">
-	
+	<link rel="stylesheet" href="css/styles.css">
+
+
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link type="text/css" href="css/bootstrap-timepicker.css">
+	<link type="text/css" href="css/bootstrap-timepicker.css">
 
 	<!-- Intro JS template -->
 	<link href="css/introjs.css" rel="stylesheet">
@@ -83,7 +84,6 @@
 		<div class="title title-mobile">
 			<h4 class="disclaimer">PLEASE NOTE: ADDING EVENTS ONLY SUPPORTED ON DESKTOP AND TABLET</h4>
 			<h3 class="inst-mob">Please follow the instructions below</h3>
-			<!--<button><a class="btn btn-large btn-success" href="javascript:void(0);" onclick="javascript:introJs().addHints();">Tooltips</a></button>-->
 		</div>
 
 		<div class="col-md-12">
@@ -306,17 +306,16 @@
 
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
+		<div class="modal-dialog modal-lg" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h4 class="modal-title" id="myModalLabel">Enter shift details</h4>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 				</div>
 				<div class="modal-body">
-					<div class="card-block">
 						<p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid inventore, nisi vel ab consequuntur cumque repudiandae, quaerat dolores consectetur autem non ipsam. Ex a corporis ut perferendis, iusto veniam saepe.</p>
 
-						<form>
+						<form class="">
 							<div class="form-group e-c">
 								<select name="Staff Needed" id="select-box">
 										<option value="Activation Staff">Activation Staff</option>
@@ -338,42 +337,62 @@
 
 							</div>
 							<p class="">How Many Staff Are Needed?</p>
-							<div class="input-group" style="width: 75%; padding-bottom: 1em">
+							
+							<!--INPUT SPINNER-->							
+							<div class="input-group margin-bottom-sm">
 								<span class="input-group-btn">
-        <button type="button" class="btn btn-default" data-value="decrease" data-target="#spinner" data-toggle="spinner">
-            <span class="fa fa-minus"></span>
-								</button>
+        						<button type="button" class="btn btn-default" data-value="decrease" data-target="#spinner" data-toggle="spinner">
+           					 <span class="fa fa-minus"></span>
+										</button>
 								</span>
 								<input type="text" data-ride="spinner" id="spinner" class="form-control input-number i-s" value="1">
 								<span class="input-group-btn">
-        <button type="button" class="btn btn-default" data-value="increase" data-target="#spinner" data-toggle="spinner">
-            <span class="fa fa-plus"></span>
-								</button>
+        					<button type="button" class="btn btn-default" data-value="increase" data-target="#spinner" data-toggle="spinner">
+            					<span class="fa fa-plus"></span>
+									</button>
 								</span>
 							</div>
 
-						<div id="basicExample">	
-						<p>When is your event?</p>						
-							
-								<input type="text" class="date start" />
-						
-								<input type="text" class="time start" /> to
-								<input type="text" class="time end" />
-								<input type="text" class="date end" />
-						</div>
-						
-							
+							<div class="input margin-bottom-sm" id="basicExample">
+							<br>
+								<p>When is your event?</p>
+								<div class="input-group margin-bottom-sm">
+								
+									<span class="input-group-addon"><i class="fa fa-calendar-o fa-fw"></i></span>
+									<input class=" datepicker" type="text" class="" />
+								</div>
+								<div class="input-group margin-bottom-sm">
+								
+									<span class="input-group-addon"><i class="fa fa-clock-o fa-fw"></i></span>
+									<input type="text" class="time start tp" />
+								</div>	
+								<br>
+								<p>to</p>
+								<br>
+								
+								<div class="input-group margin-bottom-sm">
+									<span class="input-group-addon"><i class="fa fa-calendar-o fa-fw"></i></span>
+									<input type="text" class="datepicker" />	
+								</div>
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-clock-o fa-fw"></i></span>
+									<input type="text" class="time end tp" />
+								</div>
+							</div>	
 						</form>
-					</div>
 				</div>
 				<!-- END MODAL BODY-->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-				</div><!--END MODAL FOOTER-->
-			</div><!-- END MODAL CONTENT -->
-		</div><!-- END MODAL DIALOG -->
-	</div><!--END MODAL FADE-->
+				</div>
+				<!--END MODAL FOOTER-->
+			</div>
+			<!-- END MODAL CONTENT -->
+		</div>
+		<!-- END MODAL DIALOG -->
+	</div>
+	<!--END MODAL FADE-->
 
 
 	<!-- Bootstrap core JavaScript
@@ -382,36 +401,36 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 	<script src="dist/trumbowyg.js"></script>
-	
-	
+
+
 	<script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
-	
+	<script src="js/bootstrap-datepicker.js"></script>
+
 	<script src="js/mousehold.js"></script>
 	<script src="js/bootstrap-spinner.js"></script>
 	<script src="js/scripts-date.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq10WQ5iexOEyCvy01hKyTPXEOjttR3jg&libraries=places'></script>
 	<script src="js/intro.js"></script>
 	<script src="js/add_event.js"></script>
-	
-	
+
+
 	<script>
-    // initialize input widgets first
-    $('#basicExample .time').timepicker({
-        'showDuration': true,
-        'timeFormat': 'g:ia',
-				'step': 15
-    });
+		// initialize input widgets first
+		$('#basicExample .time').timepicker({
+			'showDuration': true,
+			'timeFormat': 'g:ia',
+			'step': 15
+		});
 
-    $('#basicExample .date').datepicker({
-        'format': 'dd/mm/yyyy',
-        'autoclose': true
-    });
+		$('#basicExample .date').datepicker({
+			'format': 'dd/mm/yyyy',
+			'autoclose': true
+		});
 
-    // initialize datepair
-    var basicExampleEl = document.getElementById('basicExample');
-    var datepair = new Datepair(basicExampleEl);
-</script>	
+		// initialize datepair
+		var basicExampleEl = document.getElementById('basicExample');
+		var datepair = new Datepair(basicExampleEl);
+	</script>
 
 
 
