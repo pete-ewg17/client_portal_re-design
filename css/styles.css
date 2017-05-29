@@ -1221,10 +1221,6 @@ input:focus~.highlight {
 	left: 4px;
 }
 
-.form-group select option {
-	background-color: red;
-}
-
 .shift {
 	margin-bottom: 1em;
 }
@@ -1425,11 +1421,11 @@ input:focus~.highlight {
 	.inst-mob {
 		display: none;
 	}
-	.card,
+	/*.card,
 	.form-title,
 	.disable {
 		display: none;
-	}
+	}*/
 }
 
 
