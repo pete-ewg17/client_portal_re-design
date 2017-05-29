@@ -11,10 +11,11 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="dist/ui/trumbowyg.min.css">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/bootstrap-datepicker3.css">
+	<link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css">
+	<link type="text/css" href="css/bootstrap-timepicker.css">
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700, 600,500,400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link type="text/css" href="css/bootstrap-timepicker.css">
+<link type="text/css" href="css/bootstrap-timepicker.css">
 
 	<!-- Intro JS template -->
 	<link href="css/introjs.css" rel="stylesheet">
@@ -350,35 +351,17 @@
 								</span>
 							</div>
 
-
-							<p>Shift Start:</p>
-							<div class="group shift">
-								<input class="datepicker d-p" type="text" required>
-								<span class="highlight"></span>
-								<span class="bar"></span>
-								<label class="text-placeholder">Date Start</label>
-							</div>
-
-							<div class="group">
-								<div class="input-group bootstrap-timepicker timepicker" style="width:320px; padding: 0;">
-									<input id="timepicker-start" type="text" class="form-control input-small tp">
-									<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
-								</div>
-							</div>
-
-							<p>Shift End:</p>
-							<div class="group shift">
-								<input class="datepicker d-p" type="text" required>
-								<span class="highlight"></span>
-								<span class="bar"></span>
-								<label class="text-placeholder">Date End</label>
-							</div>
-							<div class="group">
-								<div class="input-group bootstrap-timepicker timepicker" style="width:320px;">
-									<input id="timepicker-1" type="text" class="form-control input-small tp">
-									<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
-								</div>
-							</div>
+						<div id="basicExample">	
+						<p>When is your event?</p>						
+							
+								<input type="text" class="date start" />
+						
+								<input type="text" class="time start" /> to
+								<input type="text" class="time end" />
+								<input type="text" class="date end" />
+						</div>
+						
+							
 						</form>
 					</div>
 				</div>
@@ -386,14 +369,10 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
-				</div>
-				<!--END MODAL FOOTER-->
-			</div>
-			<!-- END MODAL CONTENT -->
-		</div>
-		<!-- END MODAL DIALOG -->
-	</div>
-	<!--END MODAL FADE-->
+				</div><!--END MODAL FOOTER-->
+			</div><!-- END MODAL CONTENT -->
+		</div><!-- END MODAL DIALOG -->
+	</div><!--END MODAL FADE-->
 
 
 	<!-- Bootstrap core JavaScript
@@ -402,14 +381,36 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 	<script src="dist/trumbowyg.js"></script>
-	<script type="text/javascript" src="js/bootstrap-timepicker.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
+	
+	
+	<script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+	
 	<script src="js/mousehold.js"></script>
 	<script src="js/bootstrap-spinner.js"></script>
 	<script src="js/scripts-date.js"></script>
 	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBq10WQ5iexOEyCvy01hKyTPXEOjttR3jg&libraries=places'></script>
 	<script src="js/intro.js"></script>
 	<script src="js/add_event.js"></script>
+	
+	
+	<script>
+    // initialize input widgets first
+    $('#basicExample .time').timepicker({
+        'showDuration': true,
+        'timeFormat': 'g:ia',
+				'step': 15
+    });
+
+    $('#basicExample .date').datepicker({
+        'format': 'dd/mm/yyyy',
+        'autoclose': true
+    });
+
+    // initialize datepair
+    var basicExampleEl = document.getElementById('basicExample');
+    var datepair = new Datepair(basicExampleEl);
+</script>	
 
 
 

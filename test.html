@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.css">
+		
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/css/bootstrap-datepicker.standalone.css">
+		
+		
+	</head>
+
+	<body>
+				
+				<p id="basicExample">
+    <input type="text" class="date start" />
+    <input type="text" class="time start" /> to
+    <input type="text" class="time end" />
+    <input type="text" class="date end" />
+</p>
+				
+				
+				
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
+<script>
+    // initialize input widgets first
+    $('#basicExample .time').timepicker({
+        'showDuration': true,
+        'timeFormat': 'g:ia'
+    });
+
+    $('#basicExample .date').datepicker({
+        'format': 'dd/m/yyyy',
+        'autoclose': true
+    });
+
+    // initialize datepair
+    var basicExampleEl = document.getElementById('basicExample');
+    var datepair = new Datepair(basicExampleEl);
+</script>	
+				
+				
+	</body>
+</html>
+
+
+
+
+<!-- include input widgets; this is independent of Datepair.js -->
+<p>Shift Start:</p>
+							<div class="group shift">
+								<input class="datepicker d-p" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="text-placeholder">Date Start</label>
+							</div>
+
+							<div class="group">
+								<div class="input-group bootstrap-timepicker timepicker" style="width:320px; padding: 0;">
+									<input id="timepicker-start" type="text" class="form-control input-small tp">
+									<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+								</div>
+							</div>
+
+							<p>Shift End:</p>
+							<div class="group shift">
+								<input class="datepicker d-p" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="text-placeholder">Date End</label>
+							</div>
+							<div class="group">
+								<div class="input-group bootstrap-timepicker timepicker" style="width:320px;">
+									<input id="timepicker-1" type="text" class="form-control input-small tp">
+									<span class="input-group-addon"><i class="fa fa-clock-o"></i></span>
+								</div>
+							</div>
