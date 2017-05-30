@@ -56,7 +56,7 @@ $(".btn-one-day").click(function(){
   FORM JOURNEY
 ===============*/
 
-/*SPINNER*/
+/*SPINNER
 $(function () {
   $('.spinner .btn:first-of-type').on('click', function() {
     $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
@@ -67,7 +67,7 @@ $(function () {
 					$('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
 			}
   });
-});
+});*/
 
 // Other Box Open 
 

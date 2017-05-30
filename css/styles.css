@@ -1047,10 +1047,10 @@ input:focus~.highlight {
 .form-group select {
 	width: 100%;
 	font-size: 1rem;
-	height: 1.6rem;
+	height: 2.2em;
 	padding: 0.125rem 0.125rem 0.0625rem;
 	background: none;
-	border: none;
+	border: 1px solid #d5dae5;
 	line-height: 1.6;
 	box-shadow: none;
 	color: #555;
@@ -1161,7 +1161,7 @@ input:focus~.highlight {
 }
 
 #comment {
-	width: 320px;
+	width: 100%;
 	margin: 0.8em 0;
 	height: 100px;
 	overflow: auto;
@@ -1418,11 +1418,11 @@ input:focus~.highlight {
 	.inst-mob {
 		display: none;
 	}
-	/*.card,
-	.form-title,
+	,
+	
 	.disable {
 		display: none;
-	}*/
+	}
 }
 
 .fl-wrap {
