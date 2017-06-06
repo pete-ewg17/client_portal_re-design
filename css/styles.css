@@ -1,3 +1,22 @@
+/*  COLOUR  
+
+BTN COLOR
+
+1. Light Green: #B3D144
+2. Lighter Green: #BED85C
+
+SIDEBAR 
+Top and Side: #738C2C;
+LOGO: #566A1B
+
+ICONS: #738C2C
+
+*/
+
+
+
+
+
 /*===================
 	General Styles
 =====================*/
@@ -54,13 +73,13 @@ a.animated-button.thar-three {
 	cursor: pointer;
 	display: block;
 	position: relative;
-	background: #52C11F;
+	background: #B3D144;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 	0s;
 }
 
 a.animated-button.thar-three:hover {
-	background-color: #59d322;
+	background-color: #BED85C;
 	/*box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);*/
 }
 
@@ -117,7 +136,7 @@ a:focus {
 	width: 100%;
 	z-index: 3;
 	height: 44px;
-	background-color: #86A62A;
+	background: linear-gradient(to top, #b2d235,#b9d769);
 }
 
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
@@ -128,13 +147,23 @@ a:focus {
 	font-weight: 700;
 }
 
+.img-logo {
+	height: 100%;
+	width: auto;
+}
+
 .header .logo {
 	color: #ffffff;
 }
 
 .side-nav .logo {
-	background-color: #566A1B;
+	background: #707751;
 	color: #F4F6EB;
+}
+
+.logo-img {
+	background: url(../assets/ewg-logo.svg) no-repeat no-repeat center;
+	height: 100%;
 }
 
 .header .logo {
@@ -201,7 +230,7 @@ span:after {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-color: #86A62A;
+	background: linear-gradient(to top, #b2d235,#b9d769);
 	z-index: 1;
 	display: none;
 }
@@ -221,27 +250,30 @@ span:after {
 }
 
 .side-nav ul li:hover {
-	background: yellowgreen;
+	background: #89ac00;
+	
 }
 
 .side-nav ul li.active:after {
 	content: '';
 	position: absolute;
-	width: 4px;
+	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: #fff;
+	background-color: #707751;
+	z-index: -1;
+	opacity: 0.5;
 }
 
 .side-nav ul li a {
-	color: #fffefe;
+	color: #555;
 	display: block;
 	text-decoration: none;
 }
 
 .side-nav ul li i {
-	color: #738C2C;
+	color: #566A1B;
 	min-width: 20px;
 	text-align: center;
 }
@@ -720,7 +752,6 @@ input {
 	display: block;
 	width: 320px;
 	border: 1px solid #d5dae5;
-	border-radius: 0.2em;
 	border-bottom: 1px solid #d5dae5;
 }
 
@@ -759,100 +790,6 @@ input:valid~.text-placeholder {
 	font-size: 14px;
 	color: #86A62A;
 }
-
-
-/* BOTTOM BARS ================================= */
-
-.bar {
-	position: relative;
-	display: block;
-	width: 320px;
-}
-
-.bar:before,
-.bar:after {
-	content: '';
-	height: 2px;
-	width: 0;
-	bottom: 1px;
-	position: absolute;
-	background: #B2D235;
-	transition: 0.2s ease all;
-	-moz-transition: 0.2s ease all;
-	-webkit-transition: 0.2s ease all;
-}
-
-.bar:before {
-	left: 50%;
-}
-
-.bar:after {
-	right: 50%;
-}
-
-
-/* active state */
-
-input:focus~.bar:before,
-input:focus~.bar:after {
-	width: 50%;
-}
-
-
-/* HIGHLIGHTER ================================== */
-
-.highlight {
-	position: absolute;
-	height: 60%;
-	width: 100px;
-	top: 25%;
-	left: 0;
-	pointer-events: none;
-	opacity: 0.5;
-}
-
-
-/* active state */
-
-input:focus~.highlight {
-	-webkit-animation: inputHighlighter 0.3s ease;
-	-moz-animation: inputHighlighter 0.3s ease;
-	animation: inputHighlighter 0.3s ease;
-}
-
-
-/* ANIMATIONS ================ */
-
-@-webkit-keyframes inputHighlighter {
-	from {
-		background: #5264AE;
-	}
-	to {
-		width: 0;
-		background: transparent;
-	}
-}
-
-@-moz-keyframes inputHighlighter {
-	from {
-		background: #5264AE;
-	}
-	to {
-		width: 0;
-		background: transparent;
-	}
-}
-
-@keyframes inputHighlighter {
-	from {
-		background: #5264AE;
-	}
-	to {
-		width: 0;
-		background: transparent;
-	}
-}
-
 
 /*CHECKBOX*/
 
