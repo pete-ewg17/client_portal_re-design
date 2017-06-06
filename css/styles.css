@@ -1024,13 +1024,13 @@ input:valid~.text-placeholder {
 .form-group input,
 .form-group textarea {
 	display: block;
-	background: #fff;
+	
 	padding: 0.125rem 0.125rem 0.0625rem;
 	font-size: 1em;
 	border-width: 0;
-	border-color: transparent;
+	border: 1px solid #DDD;
 	line-height: 1.9;
-	width: 320px;
+	width: 80%;
 	color: #555;
 	-webkit-transition: all 0.28s ease;
 	transition: all 0.28s ease;
