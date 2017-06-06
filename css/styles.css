@@ -157,7 +157,7 @@ a:focus {
 }
 
 .side-nav .logo {
-	background: #707751;
+	background: rgba(0, 0, 0, .15);
 	color: #F4F6EB;
 }
 
