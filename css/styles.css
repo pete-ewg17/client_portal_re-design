@@ -250,8 +250,7 @@ span:after {
 }
 
 .side-nav ul li:hover {
-	background: #89ac00;
-	
+	background: #89ac00;	
 }
 
 .side-nav ul li.active:after {
@@ -750,7 +749,7 @@ input {
 	color: #555;
 	padding: 10px 10px 10px 5px;
 	display: block;
-	width: 320px;
+	width: 80%;
 	border: 1px solid #d5dae5;
 	border-bottom: 1px solid #d5dae5;
 }
@@ -1342,6 +1341,7 @@ input:valid~.text-placeholder {
 @media only screen and (max-width: 620px) {
 	.card-block {
 		padding: 0.5rem;
+		margin-top: 0.9em;
 	}
 	.disclaimer {
 		display: block;
