@@ -103,11 +103,11 @@
 							<div class="form-event row" id="e_d">
 								<form class='col-sm-4'>
 									<div class="group">
-										<input class="" type="text" name='' id="event_id" required>										
+										<input class="" type="text" name="eventName"id="event_id" value="" required>
 										<label class="text-placeholder">Event Name</label>
 									</div>
 									<div class="group">
-										<input type="text" name='event_location' placeholder='' id='event_location' required>
+										<input type="text" name='event_location' placeholder='' id='event_location' value="" required>
 										<input type="hidden" name='lat_long' id='lat_long'>
 										<input type="hidden" name='state' id='state'>										
 										<label class="text-placeholder">Event Location</label>
@@ -122,11 +122,11 @@
 										<a class='btn btn-success btn-more-one-day'>Yes</a>
 									</div>
 									<div class="group" id="finish-day-holder" style='display:none'>
-										<input type="text" value="" class="datepicker" required>
+										<input type="text" value="date" class="datepicker" required>
 										<label class="text-placeholder">Date</label>
 									</div>
 									<div class="group">
-										<input type="text" required>
+										<input type="website" name="eventWebsite" required>
 										<label class="text-placeholder">Event Website</label>
 									</div>
 									<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
@@ -153,19 +153,19 @@
 						<div class="card-block">
 							<form class='col-sm-4'>
 								<div class="group">
-									<input type="text" required>
+									<input type="text" name="companyName" value="" required>
 									<label class="text-placeholder">Company Name</label>
 								</div>
 								<div class="group">
-									<input type="text" required>
+									<input type="text" name="contactName" value="" required>
 									<label class="text-placeholder">Contact Name</label>
 								</div>
 								<div class="group">
-									<input type="text" required>
+									<input type="tel" required>
 									<label class="text-placeholder">Mobile Number</label>
 								</div>
 								<div class="group">
-									<input type="text" required>
+									<input type="email" name="email" value="" required>
 									
 									<label class="text-placeholder">Email</label>
 								</div>
@@ -226,15 +226,15 @@
 								</div>
 								<div class="form-group">
 									<select>
-							<option value="No Uniform">No</option>
-							<option value="Yes Uniform">Yes</option>
-							<option value="Other Uniform">Other</option>
+							<option value="No-Uniform">No</option>
+							<option value="Yes-Uniform">Yes</option>
+							<option value="Other-Uniform">Other</option>
 						  </select>
 									<label class="control-label" for="select">Any licenses required?</label>
 								</div>
 								<div class="form-group">
 									<select>
-							<option value="Any Gender">Any Gender</option>
+							<option value="Any-Gender">Any Gender</option>
 							<option value="Male">Male</option>
 							<option value="Female">Female</option>
 						  </select>
