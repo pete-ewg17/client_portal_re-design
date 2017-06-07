@@ -250,7 +250,7 @@ span:after {
 }
 
 .side-nav ul li:hover {
-	background: #89ac00;	
+	background: rgb(233, 253, 171);	
 }
 
 .side-nav ul li.active:after {
@@ -260,7 +260,7 @@ span:after {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: #707751;
+	background-color: rgb(233, 253, 171);
 	z-index: -1;
 	opacity: 0.5;
 }
@@ -298,7 +298,7 @@ span:after {
 .main-content .title {
 	background-color: #eef1f7;
 	border-bottom: 1px solid #b8bec9;
-	padding: 10px 20px;
+	padding: 9px 20px;
 	font-weight: 700;
 	color: #333;
 	font-size: 18px;
