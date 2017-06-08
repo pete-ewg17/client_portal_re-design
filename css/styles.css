@@ -136,7 +136,7 @@ a:focus {
 	width: 100%;
 	z-index: 3;
 	height: 44px;
-	background: linear-gradient(to top, #b2d235,#b9d769);
+	background: #555;
 }
 
 /* logo in header(mobile version) and side-nav (tablet & desktop) */
@@ -157,7 +157,7 @@ a:focus {
 }
 
 .side-nav .logo {
-	background: rgba(0, 0, 0, .15);
+	background: #fff;
 	color: #F4F6EB;
 }
 
@@ -230,7 +230,7 @@ span:after {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to top, #b2d235,#b9d769);
+	background: #555;
 	z-index: 1;
 	display: none;
 }
@@ -250,7 +250,7 @@ span:after {
 }
 
 .side-nav ul li:hover {
-	background: rgb(233, 253, 171);	
+	background: #000;	
 }
 
 .side-nav ul li.active:after {
@@ -260,19 +260,19 @@ span:after {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgb(233, 253, 171);
+	background-color: #000;
 	z-index: -1;
 	opacity: 0.5;
 }
 
 .side-nav ul li a {
-	color: #555;
+	color: #fff;
 	display: block;
 	text-decoration: none;
 }
 
 .side-nav ul li i {
-	color: #566A1B;
+	color: #B2D235;
 	min-width: 20px;
 	text-align: center;
 }
@@ -341,7 +341,7 @@ h3 {
 
 @media screen and (min-width: 600px) {
 	.header {
-		background-color: #738C2C;
+		background-color: #555;
 		z-index: 1;
 	}
 	.header .logo {

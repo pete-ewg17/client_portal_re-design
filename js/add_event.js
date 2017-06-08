@@ -98,8 +98,6 @@ $('.d-p').focus(function(){
 });
 
 
-
-
 $("body").on('click','.form-next-btn',function(e) {
     var unlock = $(this).data('unlock');
     var this_form = $(this).closest('.form-event');
@@ -119,8 +117,6 @@ $("body").on('click','.form-next-btn',function(e) {
 function validate_form(form_id) {
     return true;
 }
-
-
 
 // CHECKBOX 
 $("#cbx").change(function(){

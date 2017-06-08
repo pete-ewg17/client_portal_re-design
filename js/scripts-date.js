@@ -52,23 +52,6 @@ $(".btn-one-day").click(function(){
 	$("#more-than-one-day-holder").css('display', "none");
 });
 
-/*=============
-  FORM JOURNEY
-===============*/
-
-/*SPINNER
-$(function () {
-  $('.spinner .btn:first-of-type').on('click', function() {
-    $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);
-  });
-  
- 	$('.spinner .btn:last-of-type').on('click', function() {
-    	if( $('.spinner input').val() > 1){
-					$('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
-			}
-  });
-});*/
-
 // Other Box Open 
 
 $("#select-box").change(function() {
