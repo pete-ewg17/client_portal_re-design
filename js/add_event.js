@@ -25,11 +25,11 @@ $(document).ready(function() {
     }
     map.setCenter(longlat);
 
-    if($("#event_location").length > 0) {
+    if($("#eventLocation").length > 0) {
         var defaultBounds = new google.maps.LatLngBounds(
             new google.maps.LatLng(-18.720356, 112.923270),
             new google.maps.LatLng(-43.165724, 152.259580));
-        var input =document.getElementById('event_location');
+        var input =document.getElementById('eventLocation');
         searchBox = new google.maps.places.Autocomplete((input),{bounds: defaultBounds});
 
         google.maps.event.addListener(searchBox, 'place_changed', function () {
@@ -114,8 +114,14 @@ $("body").on('click','.form-next-btn',function(e) {
     }
 });
 
+
+
 function validate_form(form_id) {
-    return true;
+    if($('#eventName').val()=="" && $('#eventLocation').val()=="" && $('#eventStartDate').val()=="" && $('#eventWebsite').val()=="") {
+			return false;
+		}else {
+			return true;
+		}
 }
 
 // CHECKBOX 

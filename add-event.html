@@ -101,19 +101,19 @@
 					<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 						<div class="card-block">
 							<div class="form-event row" id="e_d" >
-								<form onsubmit="myFunction(); return false;" class='col-md-6' data-toggle="validator" action="./" method="post">
+								<form class='col-md-6' data-toggle="validator" action="./" method="post">
 									<div class="group">
-										<input class="" type="text" name="eventName"id="event_id" value="" required>
+										<input class="" type="text" name="eventName"id="eventName" value="" required>
 										<label class="text-placeholder">Event Name</label>
 									</div>
 									<div class="group">
-										<input type="text" name='event_location' placeholder='' id='event_location' value="" required>
+										<input type="text" name='event_location' placeholder='' id='eventLocation' value="" required>
 										<input type="hidden" name='lat_long' id='lat_long'>
 										<input type="hidden" name='state' id='state'>										
 										<label class="text-placeholder">Event Location</label>
 									</div>
 									<div class="group">
-										<input type="text" value="" id="event_start_date" class="datepicker" required>
+										<input type="text" value="" id="eventStartDate" class="datepicker" required>
 										<label class="text-placeholder">Date</label>
 									</div>
 									<div class="group" id="more-than-one-day-holder" style='display:none'>
@@ -126,7 +126,7 @@
 										<label class="text-placeholder">Date</label>
 									</div>
 									<div class="group">
-										<input type="website" name="eventWebsite" required>
+										<input type="website" name="eventWebsite" id="eventWebsite" required>
 										<label class="text-placeholder">Event Website</label>
 									</div>
 									<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Next</a>
