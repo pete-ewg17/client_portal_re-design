@@ -100,8 +100,8 @@
 
 					<div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
 						<div class="card-block">
-							<div class="form-event row" id="e_d">
-								<form class='col-md-6'>
+							<div class="form-event row" id="e_d" >
+								<form onsubmit="myFunction(); return false;" class='col-md-6' data-toggle="validator" action="./" method="post">
 									<div class="group">
 										<input class="" type="text" name="eventName"id="event_id" value="" required>
 										<label class="text-placeholder">Event Name</label>
@@ -129,7 +129,7 @@
 										<input type="website" name="eventWebsite" required>
 										<label class="text-placeholder">Event Website</label>
 									</div>
-									<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+									<a href="#" id="next-1" data-unlock="e_c" class="btn btn-block animated-button form-next-btn thar-three">Next</a>
 
 								</form>
 								<div class='col-sm-6 map_holder'>
@@ -180,7 +180,7 @@
 								<br>
 								<br>
 								<div class="group">
-									<a href="#" id="next-1" data-unlock="m_d" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+									<a href="#" id="next-1" data-unlock="m_d" class="btn btn-block animated-button form-next-btn thar-three">Next</a>
 								</div>
 							</form>
 						</div>
@@ -241,7 +241,7 @@
 									<label class="control-label" for="select">Workforcers</label>
 								</div>
 								<div class="group">
-									<a href="#" id="next-1" data-unlock="a_s" class="btn btn-block animated-button form-next-btn thar-three">Submit</a>
+									<a href="#" id="next-1" data-toggle="modal" data-target="#myModal" data-unlock="a_s" class="btn btn-block animated-button form-next-btn thar-three">Next</a>
 								</div>
 							</form>
 						</div>

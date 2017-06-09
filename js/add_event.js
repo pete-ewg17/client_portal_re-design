@@ -67,14 +67,14 @@ console.log(place);
             $("#state").val(ev_state);
         });
     }
-    
-	
-	
+
 // TIMEPICKER BLUR
     $(".tp").timepicker({
     	 minuteStep: 5
 });
-$(".tp").focus(function() {
+
+
+	$(".tp").focus(function() {
   $( this ).blur();
   var top = $(this).closest('.timepicker');
   var btn = $(top).find(".input-group-addon");
