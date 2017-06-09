@@ -764,6 +764,10 @@ input:focus {
 	color: transparent;
 }
 
+.fl-wrap .input-group {
+	padding-top: 0.3em;
+}
+
 
 /* LABEL ======================================= */
 
