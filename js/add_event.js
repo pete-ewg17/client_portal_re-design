@@ -1,3 +1,5 @@
+// GOOGLE MAP API
+
 var markers = [];
 $(document).ready(function() {
     var lng = -37.817782;
@@ -68,12 +70,12 @@ console.log(place);
         });
     }
 
-// TIMEPICKER BLUR
+// TIMEPICKER INTERVAL
     $(".tp").timepicker({
     	 minuteStep: 5
 });
 
-
+// TIMEPICKER BLUR
 	$(".tp").focus(function() {
   $( this ).blur();
   var top = $(this).closest('.timepicker');
@@ -98,6 +100,7 @@ $('.d-p').focus(function(){
 });
 
 
+// OPEN AND CLOSE NEXT CARD onClick
 $("body").on('click','.form-next-btn',function(e) {
     var unlock = $(this).data('unlock');
     var this_form = $(this).closest('.form-event');
@@ -115,7 +118,7 @@ $("body").on('click','.form-next-btn',function(e) {
 });
 
 
-
+// FORM VALIDATION
 function validate_form(form_id) {
     if($('#eventName').val()=="" && $('#eventLocation').val()=="" && $('#eventStartDate').val()=="" && $('#eventWebsite').val()=="") {
 			return false;
