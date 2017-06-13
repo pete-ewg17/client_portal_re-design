@@ -30,14 +30,14 @@ $(function(){
     });
 });
 
-$("#event_start_date").focus(function() {
+$("#eventStartDate").focus(function() {
 	if($(this).val() != "") {
 	   $("#more-than-one-day-holder").css('display','block');
 	}
 });
 
 var first = false;
-$("#event_start_date").blur(function() {
+$("#eventStartDate").blur(function() {
 	if(!first) {
 	   $("#more-than-one-day-holder").css('display','block');
 		first = true;
